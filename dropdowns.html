@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-link">Home</a>
+            <a href="animations.html" class="sidebar-link">Animations</a>
+            <a href="background.html" class="sidebar-link">Background</a>
+            <a href="borders.html" class="sidebar-link">Border</a>
+            <a href="buttons.html" class="sidebar-link">Buttons</a>
+            <a href="cursors.html" class="sidebar-link">Cursors</a>
+            <a style="background-color: #0094AA;" href="dropdowns.html" class="sidebar-link">Dropdown</a>
+            <a href="#" class="sidebar-link">Font</a>
+            <a href="#" class="sidebar-link">Forms</a>
+            <a href="#" class="sidebar-link">Gradient</a>
+            <a href="#" class="sidebar-link">Height/Width</a>
+            <a href="#" class="sidebar-link">Image</a>
+            <a href="#" class="sidebar-link">Link</a>
+            <a href="#" class="sidebar-link">List</a>
+            <a href="#" class="sidebar-link">Margin</a>
+            <a href="#" class="sidebar-link">Navigation bar</a>
+            <a href="#" class="sidebar-link">Opacity</a>
+            <a href="#" class="sidebar-link">Overflow</a>
+            <a href="#" class="sidebar-link">Padding</a>
+            <a href="#" class="sidebar-link">Position</a>
+            <a href="#" class="sidebar-link">Pseudi classes</a>
+            <a href="#" class="sidebar-link">Shadows</a>
+            <a href="#" class="sidebar-link">Tables</a>
+            <a href="#" class="sidebar-link">Text</a>
+            <a href="#" class="sidebar-link">Tooltip</a>
+            <a href="#" class="sidebar-link">Transform</a>
+        </div>
+        <div class="content">
+            <h1>Dropdowns</h1>
+            <hr>
+            <h2>Dropdown text</h2>
+            <div class="example">
+                <div class="dropdown-basic">
+                    <p>Сложи мишката тук!</p>
+                    <div class="dropdown-content1"><p>Това е dropdown</p></div>
+                </div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">.dropdown-basic</small> { <br>
+                            <small class="prop">display</small>: inline-block; <br>
+                        } <br>
+                          <br>
+                          <small class="class">.dropdown-content</small> { <br>
+                            <small class="prop">display</small>: none; <br>
+                            <small class="prop">background-color</small>: #0094aa; <br>
+                            <small class="prop">min-width</small>: 160px; <br>
+                            <small class="prop">box-shadow</small>: 0px 8px 16px 0px rgba(0,0,0,0.2); <br>
+                            <small class="prop">padding</small>: 12px 16px; <br>
+                        } <br>
+                          <br>
+                          <small class="class">.dropdown-basic:hover .dropdown-content</small> { <br>
+                            <small class="prop">display</small>: block; <br>
+                        } <br>
+                    </code>
+                </div>
+            </div>
+            <p>Правим <small class="class">dropdown-content</small> да не се показва с <small class="out">display: none</small> и правим да се показва ако мишката е върху <small class="class">dropdown-basic</small></p>
+            <hr>
+            <h2>Dropdown Menu</h2>
+            <div class="example">
+                <div class="dropdown-basic">
+                    <button class="drop-button">Dropdown</button>
+                    <div class="dropdown-content">
+                    <a href="">Линк 1</a>
+                    <a href="">Линк 2</a>
+                    <a href="">Линк 3</a>
+                    </div>
+                  </div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">.dropdown-basic</small> { <br>
+                            <small class="prop">display</small>: inline-block; <br>
+                        } <br>
+                          <br>
+                          <small class="class">.dropdown-content</small> { <br>
+                            <small class="prop">display</small>: none; <br>
+                            <small class="prop">background-color</small>: #0094aa; <br>
+                            <small class="prop">min-width</small>: 160px; <br>
+                            <small class="prop">box-shadow</small>: 0px 8px 16px 0px rgba(0,0,0,0.2); <br>
+                            <small class="prop">padding</small>: 12px 16px; <br>
+                        } <br>
+                          <br>
+                          <small class="class">.dropdown-basic:hover .dropdown-content</small> { <br>
+                            <small class="prop">display</small>: block; <br>
+                        } <br>
+                          <br>
+                        <small class="class">.dropdown-content a</small> { <br>
+                            <small class="prop">color</small>: black; <br>
+                            <small class="prop">padding</small>: 12px ; <br>
+                            <small class="prop">display</small>: block; <br>
+                          } <br>
+                        <br>
+                          <small class="class">.drop-button</small> { <br>
+                            <small class="prop">background-color</small>: green; <br>
+                            <small class="prop">color</small>: white; <br>
+                            <small class="prop">padding</small>: 16px; <br>
+                            <small class="prop">font-size</small>: 16px; <br>
+                            <small class="prop">border</small>: none; <br>
+                            <small class="prop">cursor</small>: pointer; <br>
+                          }
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

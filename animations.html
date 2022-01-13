@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-link">Home</a>
+            <a style="background-color: #0094AA;" href="animations.html" class="sidebar-link">Animations</a>
+            <a href="background.html" class="sidebar-link">Background</a>
+            <a href="#" class="sidebar-link">Border</a>
+            <a href="#" class="sidebar-link">Buttons</a>
+            <a href="#" class="sidebar-link">Display</a>
+            <a href="#" class="sidebar-link">Dropdown</a>
+            <a href="#" class="sidebar-link">Font</a>
+            <a href="#" class="sidebar-link">Forms</a>
+            <a href="#" class="sidebar-link">Gradient</a>
+            <a href="#" class="sidebar-link">Height/Width</a>
+            <a href="#" class="sidebar-link">Image</a>
+            <a href="#" class="sidebar-link">Link</a>
+            <a href="#" class="sidebar-link">List</a>
+            <a href="#" class="sidebar-link">Margin</a>
+            <a href="#" class="sidebar-link">Navigation bar</a>
+            <a href="#" class="sidebar-link">Opacity</a>
+            <a href="#" class="sidebar-link">Overflow</a>
+            <a href="#" class="sidebar-link">Padding</a>
+            <a href="#" class="sidebar-link">Position</a>
+            <a href="#" class="sidebar-link">Pseudi classes</a>
+            <a href="#" class="sidebar-link">Shadows</a>
+            <a href="#" class="sidebar-link">Tables</a>
+            <a href="#" class="sidebar-link">Text</a>
+            <a href="#" class="sidebar-link">Tooltip</a>
+            <a href="#" class="sidebar-link">Transform</a>
+
+        </div>
+        <div class="content">
+            <h1>Animations</h1>
+            <hr>
+            <h2>Какво е анимация</h2>
+            <p>С <a>анимацията</a> променяме стила на даден обект.</p>
+            <div class="example">
+                <div id="animation1" class="animation"></div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">#animation1</small>{<br>
+                            <small class="prop">width</small>: 200px;<br>
+                            <small class="prop">height</small>: 200px;<br>
+                            <small class="prop">background-color</small>: green;<br>
+                            <small class="prop">border-radius</small>: 15px;<br>
+                            <small class="prop">animation-name</small>: color-change;<br>
+                            <small class="prop">animation-duration</small>: 6s;<br>
+                        }<br>
+                        <small class="class">@keyframes</small> color-change{<br>
+                            form{<small class="prop">background-color</small>: green;} <br>
+                            to{<small class="prop">background-color</small>: cyan} <br>
+                        }
+                    </code>
+                </div>
+            </div>
+            <div class="info">
+                <p><small class="out">animation-name</small> - задава имато на анимацията</p>
+                <p><small class="out">animation-duration</small> - задава трайността на анимацията</p>
+                <p><small class="out">@keyframes</small> - в скобите определяме как изглежда анимацията</p>
+                <p><small class="out">to/from</small> - как започва и как свършва (от 0% до 100%)</p>
+            </div>
+            <hr>
+            <h2>Animation property change and percents%</h2>
+            <div class="example">
+                <div id="animation2" class="animation"></div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">#animation2</small>{<br>
+                            <small class="prop">width</small>: 200px;<br>
+                            <small class="prop">height</small>: 200px;<br>
+                            <small class="prop">background-color</small>: #0094AA;<br>
+                            <small class="prop">border-radius</small>: 15px;<br>
+                            <small class="prop">animation-name</small>: opacity-change;<br>
+                            <small class="prop">animation-duration</small>: 6s;<br>
+                        }<br>
+                        <small class="class">@keyframes</small> opacity-change{<br>
+                            25%{opacity: 0.75; width: 200px; margin-right: 50px;} <br>
+                            50%{opacity: 0.5; width: 150px; margin-right: 100px;} <br>
+                            75%{opacity: 0.25; width: 100px; margin-right: 150px;} <br>
+                            100%{opacity: 0; width: 50px; margin-right: 200px;} <br>
+                        }
+                    </code>
+                </div>
+            </div>
+            <h2>More properties</h2>
+            <div class="info">
+                <p><small class="out">animation-delay</small> - След колко време да започне анимацията</p>
+                <p><small class="out">animation-iteration-count</small> - колко пъти да се повтори анимацията</p>
+                <p><small class="out">animation-direction</small> - reversed - наобратно, alternate - стига до края и се връща</p>
+            </div>
+            <hr>
+            <h2>Крива на скоростта</h2>
+            <p><small class="out">animation-timing-function</small> - променя кривата на скоростта на анимацията. Ползвайки cubic-bezier(n,n,n,n) може да зададем собствена крива, останалите стойности са показани долу:</p>
+            <div id="curve-example">
+                <div id="curve-animation1" class="animation3">ease-in-out</div>
+                <div id="curve-animation2" class="animation3">ease-out</div>
+                <div id="curve-animation3" class="animation3">ease-in</div>
+                <div id="curve-animation4" class="animation3">ease</div>
+                <div id="curve-animation5" class="animation3">linear</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

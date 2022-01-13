@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-link">Home</a>
+            <a href="animations.html" class="sidebar-link">Animations</a>
+            <a href="background.html" class="sidebar-link">Background</a>
+            <a href="borders.html" class="sidebar-link">Border</a>
+            <a  style="background-color: #0094AA;" href="buttons.html" class="sidebar-link">Buttons</a>
+            <a href="cursors.html" class="sidebar-link">Display</a>
+            <a href="#" class="sidebar-link">Dropdown</a>
+            <a href="#" class="sidebar-link">Font</a>
+            <a href="#" class="sidebar-link">Forms</a>
+            <a href="#" class="sidebar-link">Gradient</a>
+            <a href="#" class="sidebar-link">Height/Width</a>
+            <a href="#" class="sidebar-link">Image</a>
+            <a href="#" class="sidebar-link">Link</a>
+            <a href="#" class="sidebar-link">List</a>
+            <a href="#" class="sidebar-link">Margin</a>
+            <a href="#" class="sidebar-link">Navigation bar</a>
+            <a href="#" class="sidebar-link">Opacity</a>
+            <a href="#" class="sidebar-link">Overflow</a>
+            <a href="#" class="sidebar-link">Padding</a>
+            <a href="#" class="sidebar-link">Position</a>
+            <a href="#" class="sidebar-link">Pseudi classes</a>
+            <a href="#" class="sidebar-link">Shadows</a>
+            <a href="#" class="sidebar-link">Tables</a>
+            <a href="#" class="sidebar-link">Text</a>
+            <a href="#" class="sidebar-link">Tooltip</a>
+            <a href="#" class="sidebar-link">Transform</a>
+
+        </div>
+        <div class="content">
+            <h1>Button in CSS</h1>
+            <p>Button е tag със което създаваме бутони и е често използвано</p>
+            <hr>
+            <p>Бутоните могат да бъдат стилизирани по много начини. Показан е disabled button:</p>
+            <div class="example">
+                <input type="button" class="disabled-button" value="Disabled" disabled>
+                <div class="code-show">
+                    <code>
+                        <small class="class">input</small> <small class="prop">type</small> ="button" <small class="prop">class</small>="disabled-button" <small class="prop">value</small>="Disabled" disabled <br>
+                        <br>
+                        <small class="class">.disabled-button</small>{ <br>
+                            <small class="prop">width</small>: 200px; <br>
+                            <small class="prop">height</small>: 50px; <br>
+                            <small class="prop">font-size</small>: 30px; <br>
+                            <small class="prop">cursor</small>: not-allowed; <br>
+                        }
+                    </code>
+                </div>
+            </div>
+            <p>Interesting: You can create circle buttons if you use <small class="out">border-radius</small>: 50%</p>
+            <button id="circle-button">+</button>
+            <hr>
+            <h2>Hover effect</h2>
+            <p>Като използваме <small class="class">:hover</small> след бутона в CSS можем да създадем събитие ако курсорът е върху бутона</p>
+            <div class="example">
+                <button class="button" id="red-hover">Red</button>
+                <button class="button" id="green-hover">Green</button>
+                <button class="button" id="blue-hover">Blue</button>
+                <button class="button" id="opacity-button">Opacity change</button>
+                <div class="code-show">
+                    <code>
+                        <small class="class">#red:hover</small>{ <br>
+                            <small class="prop">background-color</small>: red; <br>
+                        } <br>
+                        <small class="class">#green:hover</small>{ <br>
+                            <small class="prop">background-color</small>: green; <br>
+                        } <br>
+                        <small class="class">#blue:hover</small>{ <br>
+                            <small class="prop">background-color</small>: blue; <br>
+                        } <br>
+                        <small class="class">#opacity-button:hover</small>{ <br>
+                            <small class="prop">opacity</small> : 0.7; <br>
+                        } <br>
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <h2>Ripple effect</h2>
+            <p>Като използваме <small class="class">:active</small> след бутона в CSS можем да променяме вида на бутона ако е натиснат</p>
+            <div class="example">
+                <button class="button" id="red">Red (0.7 opacity)</button>
+                <button class="button" id="green">Green (0.5 opacity)</button>
+                <button class="button" id="blue">Blue (0.3 opacity)</button>
+                <div class="code-show">
+                    <code>
+                        <small class="class">#red:active</small>{ <br>
+                            <small class="prop">opacity</small>: 0.7; <br>
+                        } <br>
+                        <small class="class">#green:active</small>{ <br>
+                            <small class="prop">opacity</small>: 0.5; <br>
+                        } <br>
+                        <small class="class">#blue:active</small>{ <br>
+                            <small class="prop">opacity</small>: 0.3; <br>
+                        }
+                    </code>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
