@@ -38,17 +38,34 @@
             <a href="#" class="sidebar-link">Transform</a>
         </div>
         <div class="content">
-            <h1>Forms</h1>
+            <h1>Forms HTML</h1>
             <hr>
             <h2>Text Input</h2>
-            <div class="example"></div>
-            <form>
-                <label for="first-name">First name:</label>
-                <input type="text" id="first-name"> <br><br>
-                <label for="last-name">Last name:</label>
-                <input type="text" id="last-name"> <br><br>
-                <input type="submit" value="Submit" class="form-button">
-            </form>
+            <div class="example">
+                <form>
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name"> <br><br>
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name"> <br><br>
+                    <input type="submit" value="Submit" class="form-button">
+                </form>
+                <div class="code-show">
+                    <code>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="first-name"> First name: &#60;<small class="class">/label</small>&#62; <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="text" <small class="prop">id</small>="first-name"> br br <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="last-name"> Last name: &#60;<small class="class">/label</small>&#62; <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="text" <small class="prop">id</small>="last-name"&#62; br br <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="submit" <small class="prop">value</small>="Submit" <small class="prop">class</small>="form-button"> <br>
+                    </code>
+                </div>
+            </div>
+            <div class="info">
+                <p><a>&#60;label></a> - използва се във формулярите за текст</p>
+                <p><a>&#60;input></a> - използва се за поле за въвеждане, има няколко стойности които са показани по долу</p>
+                <p><small class="out">type</small> - определя типът на полето(<a>text-текстово поле, submit-бутон за изпращане на формуляра</a>)</p>
+                <p><small class="out">value</small> - използва се ако искаме да сложим предварителен текст в <a>input</a></p>
+            </div>
+            <hr>
         </div>
     </div>
 </body>
