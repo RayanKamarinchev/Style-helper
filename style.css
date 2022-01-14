@@ -149,6 +149,7 @@
     height: 200px;
     margin-left: 50px;
     overflow:auto;
+    white-space: nowrap;
 }
 
 .content code{
@@ -422,4 +423,12 @@
     background-color: #0094aa;
     padding: 10px 100px;
     font-size: 20px;
+}
+
+label{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 40px;
 }

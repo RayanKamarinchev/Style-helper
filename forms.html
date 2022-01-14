@@ -51,11 +51,11 @@
                 </form>
                 <div class="code-show">
                     <code>
-                        &#60;<small class="class">label</small> <small class="prop">for</small>="first-name"> First name: &#60;<small class="class">/label</small>&#62; <br>
-                        &#60;<small class="class">input</small> <small class="prop">type</small>="text" <small class="prop">id</small>="first-name"> br br <br>
-                        &#60;<small class="class">label</small> <small class="prop">for</small>="last-name"> Last name: &#60;<small class="class">/label</small>&#62; <br>
-                        &#60;<small class="class">input</small> <small class="prop">type</small>="text" <small class="prop">id</small>="last-name"&#62; br br <br>
-                        &#60;<small class="class">input</small> <small class="prop">type</small>="submit" <small class="prop">value</small>="Submit" <small class="prop">class</small>="form-button"> <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small> = "first-name"> First name: &#60;<small class="class">/label</small>&#62; <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small> = "text" <small class="prop">id</small>="first-name"> br br <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small> = "last-name"> Last name: &#60;<small class="class">/label</small>&#62; <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small> = "text" <small class="prop">id</small>="last-name"&#62; br br <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small> = "submit" <small class="prop">value</small>="Submit" <small class="prop">class</small>="form-button"> <br>
                     </code>
                 </div>
             </div>
@@ -66,6 +66,37 @@
                 <p><small class="out">value</small> - използва се ако искаме да сложим предварителен текст в <a>input</a></p>
             </div>
             <hr>
+            <h2>Checkbox vs Radio</h2>
+            <h3>Radio</h3>
+            <div class="example">
+                <form>
+                    <p>Кой е любимият ти цвят? (само един)</p>
+                    <input type="radio" id="blue" name="fav_color" value="blue">
+                    <label for="blue">син</label><br>
+                    <input type="radio" id="red" name="fav_color" value="red">
+                    <label for="red">червен</label><br>
+                    <input type="radio" id="green" name="fav_color" value="green">
+                    <label for="green">зелен</label> <br>
+                    <input type="radio" id="yellow" name="fav_color" value="yellow">
+                    <label for="yellow">жълт</label> <br>
+                    <input type="radio" id="other" name="fav_color" value="other">
+                    <label for="other">друг</label>
+                </form>
+                <div class="code-show">
+                    <code>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="radio" <small class="prop">id</small>="blue" <small class="prop">name</small>="fav_color" <small class="prop">value</small>="blue"> <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="blue"> син &#60;<small class="class">/label</small>><br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="radio" <small class="prop">id</small>="red" <small class="prop">name</small>="fav_color" <small class="prop">value</small>="red"> <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="red"> червен &#60;<small class="class">/label</small>><br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="radio" <small class="prop">id</small>="green" <small class="prop">name</small>="fav_color" <small class="prop">value</small>="green"> <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="green"> зелен &#60;<small class="class">/label</small>> <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="radio" <small class="prop">id</small>="yellow" <small class="prop">name</small>="fav_color" <small class="prop">value</small>="yellow"> <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="yellow"> жълт &#60;<small class="class">/label</small>> <br>
+                        &#60;<small class="class">input</small> <small class="prop">type</small>="radio" <small class="prop">id</small>="other" <small class="prop">name</small>="fav_color" <small class="prop">value</small>="other"> <br>
+                        &#60;<small class="class">label</small> <small class="prop">for</small>="other"> друг &#60;<small class="class">/label</small>>
+                    </code>
+                </div>
+            </div>
         </div>
     </div>
 </body>
