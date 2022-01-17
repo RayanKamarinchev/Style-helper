@@ -10,7 +10,7 @@
 <body>
     <div class="layout">
         <div class="sidebar">
-            <a style="background-color: #0094AA;" href="index.html" class="sidebar-link">Home</a>
+            <a href="index.html" class="sidebar-link">Home</a>
             <a href="animations.html" class="sidebar-link">Animations</a>
             <a href="background.html" class="sidebar-link">Background</a>
             <a href="borders.html" class="sidebar-link">Border</a>
@@ -19,7 +19,7 @@
             <a href="dropdowns.html" class="sidebar-link">Dropdown</a>
             <a href="fonts.html" class="sidebar-link">Font</a>
             <a href="forms.html" class="sidebar-link">Forms</a>
-            <a href="gradients.html" class="sidebar-link">Gradient</a>
+            <a style="background-color: #0094AA;" href="gradients.html" class="sidebar-link">Gradient</a>
             <a href="#" class="sidebar-link">Height/Width</a>
             <a href="#" class="sidebar-link">Image</a>
             <a href="#" class="sidebar-link">Link</a>
@@ -38,10 +38,29 @@
             <a href="#" class="sidebar-link">Transform</a>
         </div>
         <div class="content">
-            <h1>Home</h1>
-            <p>Тук е мястото да научиш повече за стилизацията</p>
-            <p>Избери с какво да започнеш!</p>
-            <img src="image.jpg" alt="arrow">
+            <h1>Gradients</h1>
+            <hr>
+            <h2>Linear Gradients (up, down, left, right...)</h2>
+            <div class="gradient" id="deafult-gradient">
+                <p>background-image: linear-gradient(cyan, green);</p>
+            </div>
+            <hr>
+            <div class="gradient" id="left-right-gradient">
+                <p>background-image: linear-gradient(to right, cyan, green);</p>
+            </div>
+            <hr>
+            <div class="gradient" id="diagonal-gradient">
+                <p>background-image: linear-gradient(to bottom left, cyan, green);</p>
+            </div>
+            <hr>
+            <div class="gradient" id="rainbow-gradient">
+                <p>Rainbow using multiple colors</p>
+            </div>
+            <hr>
+            <h3>Transparency</h3>
+            background-image: linear-gradient(to right, rgba(0,0,255,0), rgba(0,0,255,1))
+            <di class="gradient" id="transparency">
+            </div>
         </div>
     </div>
 </body>
