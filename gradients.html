@@ -41,16 +41,17 @@
             <h1>Gradients</h1>
             <hr>
             <h2>Linear Gradients (up, down, left, right...)</h2>
+            <p>Задаваме със <small class="out">background-image</small></p>
             <div class="gradient" id="deafult-gradient">
-                <p>background-image: linear-gradient(cyan, green);</p>
+                <p>linear-gradient(cyan, green);</p>
             </div>
             <hr>
             <div class="gradient" id="left-right-gradient">
-                <p>background-image: linear-gradient(to right, cyan, green);</p>
+                <p>linear-gradient(to right, cyan, green);</p>
             </div>
             <hr>
             <div class="gradient" id="diagonal-gradient">
-                <p>background-image: linear-gradient(to bottom left, cyan, green);</p>
+                <p>linear-gradient(to bottom left, cyan, green);</p>
             </div>
             <hr>
             <div class="gradient" id="rainbow-gradient">
@@ -58,8 +59,32 @@
             </div>
             <hr>
             <h3>Transparency</h3>
-            background-image: linear-gradient(to right, rgba(0,0,255,0), rgba(0,0,255,1))
-            <di class="gradient" id="transparency">
+            <div class="gradient" id="transparency">
+                <p>linear-gradient(to right, rgba(0,0,255,0), rgba(0,0,255,1))</p>
+            </div>
+            <hr>
+            <h2>Radial Gradients</h2>
+            <h3>Започва от центъра</h3>
+            <div class="gradient" id="radial">
+                <p>radial-gradient(red, yellow)</p> 
+            </div>
+            <hr>
+            <h3>Gradient със различни рацтояния между цветовете</h3>
+            <div class="gradient" id="spaces">
+                <p>radial-gradient(green 15%, cyan 40%, blue 55%)</p>
+            </div>
+            <hr>
+            <h2>Conic</h2>
+            <div class="gradient" id="simple-conic">
+                <p>conic-gradient(red, yellow, green, blue)</p>
+            </div>
+            <hr>
+            <div class="gradient" id="degrees">
+                <p>conic-gradient(red 45deg, green 90deg, blue 210deg)</p>
+            </div>
+            <hr>
+            <div id="pie-chart">
+                <p>Pie chart</p>
             </div>
         </div>
     </div>
