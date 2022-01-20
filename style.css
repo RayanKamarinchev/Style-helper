@@ -488,3 +488,43 @@ h3{
     height: 200px;
     text-align: center;
 }
+
+#repeating-gradient{
+    background-image: repeating-conic-gradient(cyan 10%, green 20%);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#link-example:link{
+    color: #0094aa;
+    font-size: 30px;
+}
+
+#link-example:visited{
+    color: green;
+}
+
+#link-example:hover{
+    color: cyan;
+}
+
+#link-example:active{
+    color: yellow;
+}
+
+#button-link:link, #button-link:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #button-link:hover, #button-link:active {
+    background-color: green;
+    color: white;
+  }
