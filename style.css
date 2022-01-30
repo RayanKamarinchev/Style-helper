@@ -611,3 +611,61 @@ img {
 .image-example {
     position: relative;
   }
+
+.hover-focus{
+    padding: 15px;
+    border: black 5px solid;
+    font-size: 15px;
+}  
+
+.hover-focus:hover{
+    border-color: #0094aa;
+}
+
+.hover-focus:focus{
+    outline: none;
+    background-color: #aaaaaa;
+}
+
+  .pseudo-link:link {
+    color: #0094aa;
+    font-size: 30px;
+  }
+  
+  .pseudo-link:visited {
+    color: #00FF00;
+  }
+  
+  .pseudo-link:hover {
+    color: #FC440F;
+  }
+  
+  .pseudo-link:active {
+    color: yellow;
+  }
+
+  #pseudo-table, #pseudo-table th{
+    border: 7px solid rgb(0, 0, 0);
+  }
+  #pseudo-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #pseudo-table th, #pseudo-table td {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 8px;
+  }
+  
+  #pseudo-table tr:nth-child(even){background-color: #0000003d;}
+  
+  #pseudo-table tr:hover {background-color: #0094aa;}
+  
+  #pseudo-table td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00aac4;
+    color: white;
+  }

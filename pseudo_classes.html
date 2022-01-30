@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-link">Home</a>
+            <a href="animations.html" class="sidebar-link">Animations</a>
+            <a href="background.html" class="sidebar-link">Background</a>
+            <a href="borders.html" class="sidebar-link">Border</a>
+            <a href="buttons.html" class="sidebar-link">Buttons</a>
+            <a href="cursors.html" class="sidebar-link">Cursors</a>
+            <a href="dropdowns.html" class="sidebar-link">Dropdown</a>
+            <a href="fonts.html" class="sidebar-link">Font</a>
+            <a href="forms.html" class="sidebar-link">Forms</a>
+            <a href="gradients.html" class="sidebar-link">Gradient</a>
+            <a href="link.html" class="sidebar-link">Link</a>
+            <a href="overflow.html" class="sidebar-link">Overflow</a>
+            <a href="position.html" class="sidebar-link">Position</a>
+            <a style="background-color: #0094AA;" href="pseudo_classes.html" class="sidebar-link">Pseudi classes</a>
+            <a href="#" class="sidebar-link">Shadows</a>
+            <a href="#" class="sidebar-link">Tables</a>
+            <a href="#" class="sidebar-link">Tooltip</a>
+            <a href="#" class="sidebar-link">Transform</a>
+            <!-- HTML tags -->
+            <!-- Custom editor -->
+        </div>
+        <div class="content">
+            <h1>Pseudo classes</h1>
+            <p><a>Psuedo classes</a> like <small class="out">:hover</small> and <small class="out">:active</small></p>
+            <div class="example">
+                <div>
+                    <input class="hover-focus" type="text" placeholder="Hover me or focus on me!">
+                </div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">.hover-focus</small>{ <br>
+                            <small class="prop">padding</small>: 15px; <br>
+                            <small class="prop">border</small>: black 5px solid; <br>
+                            <small class="prop">font-size</small>: 15px; <br>
+                        }  <br>
+                        <br>
+                        <small class="class">.hover-focus:hover</small>{ <br>
+                            <small class="prop">border-color</small>: #0094aa; <br>
+                        } <br>
+                        <br>
+                        <small class="class">.hover-focus:focus</small>{ <br>
+                            <small class="prop">outline</small>: none; <br>
+                            <small class="prop">background-color</small>: #aaaaaa; <br>
+                        } <br>
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <h2>Link pseudo-classes</h2>
+            <p>Links have 4 psuedo classes: <small class="out">:link</small>, <small class="out">:visited</small>, <small class="out">:active</small>, <small class="out">:hover</small></p>
+            <div class="example">
+                <div>
+                    <a href="pseudo_classes.html" class="pseudo-link">I am Link</a>
+                </div>
+                <div class="code-show">
+                    <code>
+                         <small class="class">.pseudo-link:link</small> { <br>
+                            <small class="prop">color</small>: #0094aa; <br>
+                            <small class="prop">font-size</small>: 30px; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.pseudo-link:visited</small> { <br>
+                            <small class="prop">color</small>: #00FF00; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.pseudo-link:hover</small> { <br>
+                            <small class="prop">color</small>: #FC440F; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.pseudo-link:active</small> { <br>
+                            <small class="prop">color</small>: yellow; <br>
+                          } <br>
+                    </code>
+                </div>
+            </div>
+            <hr>
+            <h2>Table pseudo-classes</h2>
+            <p>By using <small class="out"></small></p>
+            <h3>Most common pseudo classes</h3>
+            <div class="example">
+                <div>
+                    <table id="pseudo-table">
+                        <tr>
+                            <td>Psuedo-class</th>
+                            <td>Description</th>
+                        </tr>
+                        <tr>
+                            <th>:active</th>
+                            <th>Избира активен линк</th>
+                        </tr>
+                        <tr>
+                            <th>:first-child</th>
+                            <th>Избира първия елемент от всички</th>
+                        </tr>
+                        <tr>
+                            <th>:hover</th>
+                            <th>Избира елементи при които мишката е върху тях</th>
+                        </tr>
+                        <tr>
+                            <th>:link</th>
+                            <th>Избира непосетен линк</th>
+                        </tr>
+                        <tr>
+                            <th>:nth-child()</th>
+                            <th>nth-child(even) Избира всеки четен елемент, nth-child(odd) всеки нечетен елемент</th>
+                        </tr>
+                        <tr>
+                            <th>:visited</th>
+                            <th>Избира вече посетен линк</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">#pseudo-table, #pseudo-table th</small>{ <br>
+                            <small class="prop">border</small>: 7px solid rgb(0, 0, 0); <br>
+                          } <br>
+                          <br>
+                          <small class="class">#pseudo-table</small> { <br>
+                            <small class="prop">font-family</small>: Arial, Helvetica, sans-serif; <br>
+                            <small class="prop">border-collapse</small>: collapse; <br>
+                            <small class="prop">width</small>: 100%; <br>
+                          } <br>
+                        <br>
+                          <small class="class">#pseudo-table th, #pseudo-table td </small>{ <br>
+                            <small class="prop">border</small>: 3px solid rgb(0, 0, 0); <br>
+                            <small class="prop">padding</small>: 8px; <br>
+                          } <br>
+                          <br>
+                          <small class="class">#pseudo-table tr:nth-child(even)</small>{<small class="prop">background-color</small>: #0000003d;} <br>
+                          <br>
+                          <small class="class">#pseudo-table tr:hover</small> {<small class="prop">background-color</small>: #0094aa;} <br>
+                          <br>
+                          <small class="class">#pseudo-table td</small>{ <br>
+                            <small class="prop">padding-top</small>: 12px; <br>
+                            <small class="prop">padding-bottom</small>: 12px; <br>
+                            <small class="prop">text-align</small>: left; <br>
+                            <small class="prop">background-color</small>: #00aac4; <br>
+                            <small class="prop">color</small>: white; <br>
+                          }
+                    </code>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
