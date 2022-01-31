@@ -695,3 +695,22 @@ img {
 span{
     font-size: 20px;
 }
+
+ .card {
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .card-header {
+    height: 150px;
+    background-color: #0094aa;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+  }
+  
+  .card-container {
+    padding: 10px;
+  }
