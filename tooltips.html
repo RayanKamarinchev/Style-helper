@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html" class="sidebar-link">Home</a>
+            <a href="animations.html" class="sidebar-link">Animations</a>
+            <a href="background.html" class="sidebar-link">Background</a>
+            <a href="borders.html" class="sidebar-link">Border</a>
+            <a href="buttons.html" class="sidebar-link">Buttons</a>
+            <a href="cursors.html" class="sidebar-link">Cursors</a>
+            <a href="dropdowns.html" class="sidebar-link">Dropdown</a>
+            <a href="fonts.html" class="sidebar-link">Font</a>
+            <a href="forms.html" class="sidebar-link">Forms</a>
+            <a href="gradients.html" class="sidebar-link">Gradient</a>
+            <a href="link.html" class="sidebar-link">Link</a>
+            <a href="overflow.html" class="sidebar-link">Overflow</a>
+            <a href="position.html" class="sidebar-link">Position</a>
+            <a href="pseudo_classes.html" class="sidebar-link">Pseudi classes</a>
+            <a href="shadows.html" class="sidebar-link">Shadows</a>
+            <a href="tables.html" class="sidebar-link">Tables</a>
+            <a style="background-color: #0094AA;" href="tooltips.html" class="sidebar-link">Tooltip</a>
+            <a href="#" class="sidebar-link">Transform</a>
+            <!-- HTML tags -->
+            <!-- Custom editor -->
+        </div>
+        <div class="content">
+            <h1>Tooltips</h1>
+            <p>You will learn how to make tooltips for your page</p>
+            <div class="example">
+                <div>
+                    <div class="tooltip">
+                        <p>Hover for the tooltip</p>
+                        <span class="tooltiptext">I am tooltip</span>
+                    </div>
+                </div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">.tooltip</small> { <br>
+                            <small class="prop">position</small>: relative; <br>
+                            <small class="prop">display</small>: inline-block; <br>
+                            <small class="prop">border-bottom</small>: 1px dotted black; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.tooltip .tooltiptext</small> { <br>
+                            <small class="prop">visibility</small>: hidden; <br>
+                            <small class="prop">width</small>: 120px; <br>
+                            <small class="prop">background-color</small>: black; <br>
+                            <small class="prop">color</small>: #fff; <br>
+                            <small class="prop">text-align</small>: center; <br>
+                            <small class="prop">border-radius</small>: 6px; <br>
+                            <small class="prop">padding</small>: 5px 0; <br>
+                            <small class="prop">position</small>: absolute; <br>
+                            <small class="prop">z-index</small>: 1; <br>
+                            <small class="prop">top</small>: 150%; <br>
+                            <small class="prop">left</small>: 50%; <br>
+                            <small class="prop">margin-left</small>: -60px; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.tooltip .tooltiptext::after</small> { <br>
+                            <small class="prop">content</small>: ""; <br>
+                            <small class="prop">position</small>: absolute; <br>
+                            <small class="prop">bottom</small>: 100%; <br>
+                            <small class="prop">left</small>: 50%; <br>
+                            <small class="prop">margin-left</small>: -5px; <br>
+                            <small class="prop">border-width</small>: 5px; <br>
+                            <small class="prop">border-style</small>: solid; <br>
+                            <small class="prop">border-color</small>: transparent transparent black transparent; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.tooltip:hover .tooltiptext</small> { <br>
+                            <small class="prop">visibility</small>: visible; <br>
+                          } <br>
+                    </code>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
