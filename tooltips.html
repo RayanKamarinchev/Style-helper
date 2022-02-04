@@ -45,15 +45,12 @@
                     <code>
                         <small class="class">.tooltip</small> { <br>
                             <small class="prop">position</small>: relative; <br>
-                            <small class="prop">display</small>: inline-block; <br>
-                            <small class="prop">border-bottom</small>: 1px dotted black; <br>
                           } <br>
                           <br>
                           <small class="class">.tooltip .tooltiptext</small> { <br>
                             <small class="prop">visibility</small>: hidden; <br>
                             <small class="prop">width</small>: 120px; <br>
-                            <small class="prop">background-color</small>: black; <br>
-                            <small class="prop">color</small>: #fff; <br>
+                            <small class="prop">background-color</small>: #0094AA; <br>
                             <small class="prop">text-align</small>: center; <br>
                             <small class="prop">border-radius</small>: 6px; <br>
                             <small class="prop">padding</small>: 5px 0; <br>
@@ -81,7 +78,48 @@
                     </code>
                 </div>
             </div>
-            
+            <div class="info">
+                <p>The <small class="out">tooltip</small> have the prop <small class="out">position: relative</small> so we can position the <small class="out">tooltiptext</small> using <small class="out">position:absolute</small> prop</p>
+                <p>The <small class="out">tooltiptext</small> have <small class="out">visibility:hidden</small> so when we <small class="out">tooltip:hover</small> it will become visible</p>
+            </div>
+            <h2>Tooltip animation</h2>
+            <div class="example">
+                <div>
+                    <div class="tooltipa">
+                        <p>Hover for the tooltip</p>
+                        <span class="tooltiptexta">I am animated tooltip</span>
+                    </div>
+                </div>
+                <div class="code-show">
+                    <code>
+                        <small class="class">.tooltipa</small> { <br>
+                            <small class="prop">position</small>: relative; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.tooltipa .tooltiptexta</small> { <br>
+                            <small class="prop">visibility</small>: hidden; <br>
+                            <small class="prop">width</small>: 150px; <br>
+                            <small class="prop">background-color</small>: #0094aa; <br>
+                            <small class="prop">text-align</small>: center; <br>
+                            <small class="prop">border-radius</small>: 6px; <br>
+                            <small class="prop">padding</small>: 5px 0; <br>
+                            <small class="prop">position</small>: absolute; <br>
+                            <small class="prop">z-index</small>: 1; <br>
+                            <small class="prop">bottom</small>: 100%; <br>
+                            <small class="prop">left</small>: 50%; <br>
+                            <small class="prop">margin-left</small>: -60px; <br>
+                            <br>
+                            <small class="prop">opacity</small>: 0; <br>
+                            <small class="prop">transition</small>: opacity 2s; <br>
+                          } <br>
+                          <br>
+                          <small class="class">.tooltipa:hover .tooltiptexta</small> { <br>
+                            <small class="prop">visibility</small>: visible; <br>
+                            <small class="prop">opacity</small>: 1; <br>
+                          } <br>
+                    </code>
+                </div>
+            </div>
         </div>
     </div>
 </body>
