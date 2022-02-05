@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="borders.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/borders.css">
 </head>
 <body>
     <div class="layout">
@@ -38,15 +38,17 @@
             <div class="info">
                 <p><small class="out">border-style</small> - задава стил на границата и има следните стойности:</p>
             </div>
-            <p class="border" style="border-style: solid;">solid border</p>
-            <p class="border" style="border-style: dashed;">dashed border</p>
-            <p class="border" style="border-style: dotted;">dotted border</p>
-            <p class="border" style="border-style: double;">double border</p>
-            <p class="border" style="border-style: ridge;">ridge border</p>
-            <p class="border" style="border-style: groove;">groove border</p>
-            <p class="border" style="border-style: outset;">outset border</p>
-            <p class="border" style="border-style: inset;">inset border</p>
-            <p class="border" style="border-top-style: solid; border-bottom-style: dashed; border-left-style: dotted; border-right-style: double;">mixed border (border-top-style, border-bottom-style, border-left-style, border-right-style)</p>
+            <div>
+                <p class="border" style="border-style: solid;">solid border</p>
+                <p class="border" style="border-style: dashed;">dashed border</p>
+                <p class="border" style="border-style: dotted;">dotted border</p>
+                <p class="border" style="border-style: double;">double border</p>
+                <p class="border" style="border-style: ridge;">ridge border</p>
+                <p class="border" style="border-style: groove;">groove border</p>
+                <p class="border" style="border-style: outset;">outset border</p>
+                <p class="border" style="border-style: inset;">inset border</p>
+                <p class="border" style="border-top-style: solid; border-bottom-style: dashed; border-left-style: dotted; border-right-style: double;">mixed border (border-top-style, border-bottom-style, border-left-style, border-right-style)</p>
+            </div>
             <div class="info">
                 <p><small class="out">border-width</small> - задава размер на границата</p>
                 <p><small class="out">border-color</small> - задава цвят</p>
@@ -55,7 +57,7 @@
             <hr>
             <h2>Border Image</h2>
             <p>Като използваме това изображение:</p>
-            <img src="border.png" alt="image">
+            <img src="../border.png" alt="image">
             <p>Може да направим граница базирана на изображението:</p>
             <p id="border-image-example"><small class="out">border-image</small>:url(border.png) 30 rounded | (image url) (на кой пиксел разделяме картината)(да се повтаря или разтяга)</p>
         </div>

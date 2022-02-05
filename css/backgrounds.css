@@ -1,27 +1,15 @@
-#background-example{
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 10px;
-}
-
 #blue-background{
-    margin: 10px;
     padding: 80px;
     background-color: #0094aa;
     border-radius: 15px;
 }
 
 #green-background{
-    margin: 10px;
     padding: 80px;
     background-color: green;
     border-radius: 15px;
 }
 
-#opacity-example{
-    display: flex;
-    flex-flow: row nowrap;
-}
 .opacity{
     background-color: #0094aa;
     padding: 40px;
@@ -58,7 +46,6 @@
 }
 
 #background-image{
-    background-image: url(background.jpg);
+    background-image: url(../background.jpg);
     padding: 200px;
-    
 }

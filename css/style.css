@@ -8,11 +8,15 @@
 }
 
 .sidebar{
+    overflow: scroll;
     padding: 0px;
     display: flex;
     flex-flow: column nowrap;
-    flex-grow: 1;
+    width: 20%;
     background-color: #fbf5f3;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
 }
 
 .sidebar-link{
@@ -30,11 +34,13 @@
 }
 
 .content{
+    margin-left: 20%;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     flex-flow: column nowrap;
     flex-direction: column;
     flex-wrap: nowrap;
-    flex-grow: 3;
     align-items: center;
 }
 
@@ -69,8 +75,8 @@
 }
 
 .code-show{
+    padding-right: 50px;
     border: 5px dashed gray;
-    width: 700px;
     height: 200px;
     margin-left: 50px;
     overflow:auto;
@@ -99,7 +105,7 @@
 }
 
 .info{
-    margin-right: auto;
+    margin-left: 50px;
     margin-top: 50px;
 }
 

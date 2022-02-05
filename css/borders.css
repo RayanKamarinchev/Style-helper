@@ -1,10 +1,10 @@
 .border{
+    margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: auto;
 }
 
 #border-image-example{
     border: 10px solid transparent;
     padding: 15px;
-    border-image: url(border.png) 30 round;
+    border-image: url(../border.png) 30 round;
 }
