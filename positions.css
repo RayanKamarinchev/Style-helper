@@ -1,0 +1,54 @@
+.fixed{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: #0094aa;
+    padding: 10px;
+    border: #00aac4 solid 5px;
+  }
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: #00aac4;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 25px;
+  }
+
+.top-right{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 25px;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 25px;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 25px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+.image-example {
+    position: relative;
+  }

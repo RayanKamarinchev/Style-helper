@@ -1,0 +1,57 @@
+#animation1{
+    background-color: green;
+    border-radius: 15px;
+    animation-name: color-change;
+}
+
+@keyframes color-change{
+    form{background-color: green;}
+    to{background-color: #0094aa}
+}
+
+#animation2{
+    background-color: #0094aa;
+    border-radius: 15px;
+    animation-name: opacity-change;
+}
+
+.animation{
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes opacity-change{
+    25%{opacity: 0.75; width: 200px; margin-right: 50px;}
+    50%{opacity: 0.5; width: 150px; margin-right: 100px;}
+    75%{opacity: 0.25; width: 100px; margin-right: 150px;}
+    100%{opacity: 0; width: 50px; margin-right: 200px;}
+}
+
+#curve-example{
+    margin-right: auto;
+}
+
+.animation3{
+    width: 100px;
+    height: 50px;
+    background-color: #0094aa;
+    font-weight: bold;
+    position: relative;
+    animation: curve 5s infinite;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#curve-animation1 {animation-timing-function: ease-in-out;}
+#curve-animation2 {animation-timing-function: ease-out;}
+#curve-animation3 {animation-timing-function: ease-in;}
+#curve-animation4 {animation-timing-function: ease;}
+#curve-animation5 {animation-timing-function: linear;}
+
+@keyframes curve {
+    from {left: 0px;}
+    to {left: 300px;}
+  }

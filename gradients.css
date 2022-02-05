@@ -1,0 +1,63 @@
+.gradient{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#deafult-gradient{
+    background-image: linear-gradient(cyan, green);
+}
+
+#left-right-gradient{
+    background-image: linear-gradient(to right, cyan, green);
+}
+
+#diagonal-gradient{
+    background-image: linear-gradient(to bottom left, cyan, green);
+}
+
+#rainbow-gradient{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+}
+
+#rainbow-gradient p{
+    color: #888888;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#transparency{
+    background-image: linear-gradient(to left, rgba(0,0,255,0), rgba(0,0,255,1));
+}
+
+#radial{
+    background-image: radial-gradient(red, yellow);
+}
+
+#spaces{
+    background-image: radial-gradient(green 15%, cyan 40%, blue 55%)
+}
+
+#simple-conic{
+    background-image: conic-gradient(red, yellow, green, blue);
+}
+
+#degrees{
+    background-image: conic-gradient(red 45deg, green 90deg, blue 210deg);
+}
+
+#pie-chart{
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#repeating-gradient{
+    background-image: repeating-conic-gradient(cyan 10%, green 20%);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}

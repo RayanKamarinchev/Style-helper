@@ -1,0 +1,31 @@
+.hover-focus{
+    padding: 15px;
+    border: black 5px solid;
+    font-size: 15px;
+}  
+
+.hover-focus:hover{
+    border-color: #0094aa;
+}
+
+.hover-focus:focus{
+    outline: none;
+    background-color: #aaaaaa;
+}
+
+  .pseudo-link:link {
+    color: #0094aa;
+    font-size: 30px;
+  }
+  
+  .pseudo-link:visited {
+    color: #00FF00;
+  }
+  
+  .pseudo-link:hover {
+    color: #FC440F;
+  }
+  
+  .pseudo-link:active {
+    color: yellow;
+  }
