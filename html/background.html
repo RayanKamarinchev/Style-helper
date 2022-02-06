@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/backgrounds.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
+    <script src="../js/backgrounds.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -42,6 +43,22 @@
             <hr>
             <h2>Какво  е background?</h2>
             <p><a>Background</a> е property в CSS, използва се за задаване на фон на станицата</p>
+            <hr>
+            <h2>Editable background</h2>
+            <div class="advanced-background">
+                <div class="color-picker">
+                    <label for="red">Red (0 to 255)</label>
+                    <input onchange="OnChange()" type="range" id="red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
+                    <label for="green">Red (0 to 255)</label>
+                    <input onchange="OnChange()" type="range" id="green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
+                    <label for="blue">Red (0 to 255)</label>
+                    <input onchange="OnChange()" type="range" id="blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+                </div>
+              </div>
+              <div class="image-box">
+                DISPLAY THE COLOR TODO
+              </div>
+            <hr>
             <h2>Example</h2>
             <div id=background-example>
                 <div id="green-background"><p>background-color: green</p></div>

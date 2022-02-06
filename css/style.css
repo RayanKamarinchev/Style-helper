@@ -246,3 +246,12 @@ span{
 .tag{
   color: #00505c;
 }
+
+.image-box{
+  overflow: hidden;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border: black 3px solid;
+}
