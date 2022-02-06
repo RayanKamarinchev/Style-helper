@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/transforms.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
+    <script src="../js/transforms.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -35,26 +37,28 @@
             <a href="tables.html" class="sidebar-link"><i class="fas fa-table"></i> Tables</a>
             <a href="tooltips.html" class="sidebar-link"><i class="far fa-comment-dots"></i> Tooltip</a>
             <a style="background-color: #0094AA;" href="transforms.html" class="sidebar-link"><i class="fas fa-exchange-alt"></i> Transform</a>
+            <!-- Do transition -->
         </div>
         <div class="content">
             <h1>Transform</h1>
             <hr>
-            <div class="custom-select" style="width:200px;">
-              <select>
-                <option value="0">Select car:</option>
-                <option value="1">Audi</option>
-                <option value="2">BMW</option>
-                <option value="3">Citroen</option>
-                <option value="4">Ford</option>
-                <option value="5">Honda</option>
-                <option value="6">Jaguar</option>
-                <option value="7">Land Rover</option>
-                <option value="8">Mercedes</option>
-                <option value="9">Mini</option>
-                <option value="10">Nissan</option>
-                <option value="11">Toyota</option>
-                <option value="12">Volvo</option>
+            <div class="advanced-selection">
+              <label for="selection"><small class="class">transform</small>: </label>
+              <select onchange="OnSelect()" class="custom-select" id="selection">
+                <option disabled selected value="0">Select transform:</option>
+                <option value="skew">skew</option>
+                <option value="scale">scale</option>
+                <option value="rotate">rotate</option>
+                <option value="translate">translate</option>
               </select>
+              <div class="input-example">
+                <input onchange="OnInputChange()" type="text" id="input-text">
+                <p class="transform-example">Text</p>
+              </div>
+              
+            </div>
+            <div class="image-box">
+              <img src="../math.png" id="transform-example" alt="">
             </div>
         </div>
     </div>
