@@ -136,21 +136,25 @@ body{
     display: none;
 }
 
-  /* #table-fonts {
+  table{
+    border: black solid 3px;
+  }
+
+  #table-fonts {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid black;
     text-align: left;
     padding: 8px;
   }
   
   tr:nth-child(even) {
     background-color: #dddddd;
-  } */
+  }
 
 label{
     font-size: 20px;
@@ -237,4 +241,8 @@ span{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.tag{
+  color: #00505c;
 }

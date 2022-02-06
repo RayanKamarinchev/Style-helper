@@ -115,8 +115,36 @@
                             <small class="prop">cursor</small>: pointer; <br>
                           }
                     </code>
-                </div>
+                </div> 
             </div>
+            <hr>
+            <h2>Напреднал Пример</h2>
+            <div class="dropdown">
+              <input type="checkbox" id="dropdown">
+            
+              <label class="dropdown__face" for="dropdown">
+                <div class="dropdown__text">Dropdown</div>
+            
+                <div class="dropdown__arrow"></div>
+              </label>
+            
+              <ul class="dropdown__items">
+                <li>🙂</li>
+                <li>😺</li>
+                <li>😽</li>
+                <li>😎</li>
+                <li>🤗</li>
+              </ul>
+            </div>
+            
+            <svg>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </svg>
+            <br><br><br><br><br><br><br>
         </div>
     </div>
 </body>
