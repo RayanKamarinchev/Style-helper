@@ -7,8 +7,6 @@ const options = {
 function OnSelect() {
     const selector = document.getElementById("selection");
     const textElement = document.getElementsByClassName("transform-example")[0];
-    console.log({selector:selector.value});
-    console.log({textElement});
     textElement.innerText = options[selector.value];
 }
 

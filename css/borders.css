@@ -44,4 +44,14 @@
 		 background-position: 100% 50%;
 	}
 }
+
+#border-chnager-example{
+	width: 200px;
+	height: 100px;
+	background-color: #0094aa;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
  

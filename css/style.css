@@ -248,10 +248,40 @@ span{
 }
 
 .image-box{
+  position: relative;
+  margin-top: 20px;
   overflow: hidden;
   text-align: center;
   height: 400px;
   width: 400px;
   background-color: white;
   border: black 3px solid;
+}
+
+.custom-select{
+  background-color: #d6d6d6;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  border: solid black 1px;
+  border-radius: 5px;
+  text-align: center;
+  color: #FC440F;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+option{
+  background-color: #d6d6d6;
+  border: none;
+}
+
+input[type=text], input[type=number]{
+  background-color: #d6d6d6;
+  padding: 4px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
