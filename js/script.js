@@ -1,28 +1,13 @@
 /* <div class="color-picker">
                     <label for="red">Red (0 to 255)</label>
-                    <input onchange="OnColorPick()" type="range" id="red-color" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
+                    <input onchange="OnColorPick()" type="range" id="red-color" name="red" min="0" max="255" value="0"> <p id="red-value">Red: 0</p>
                     <label for="green">Green (0 to 255)</label>
-                    <input onchange="OnColorPick()" type="range" id="green-color" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
+                    <input onchange="OnColorPick()" type="range" id="green-color" name="green" min="0" max="255" value="58"> <p id="green-value">Green: 58</p>
                     <label for="blue">Blue (0 to 255)</label>
-                    <input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+                    <input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255" value="67"> <p id="blue-value">Blue: 67</p>
                 </div> */
 
-function OnBorderColorPick() {
-    const red = document.getElementById("red");
-    const green = document.getElementById("green");
-    const blue = document.getElementById("blue");
-    const redNum = document.getElementById("red-value");
-    const greenNum = document.getElementById("green-value");
-    const blueNum = document.getElementById("blue-value");
-    const imageElement = document.getElementById("object");
-    const colorDisplayer = document.getElementById("color-display");
-    colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
-    redNum.innerText = `Red: ${red.value}`
-    greenNum.innerText = `Green: ${green.value}`
-    blueNum.innerText = `Blue: ${blue.value}`
-    imageElement.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
-}
-function OnColorPick() {
+    function OnColorPick() {
     const red = document.getElementById("red-color");
     const green = document.getElementById("green-color");
     const blue = document.getElementById("blue-color");
@@ -66,7 +51,7 @@ function decToHexa(n)
         hexCode+=hexaDeciNum[0];
     }
     else if (i == 0)
-        hexCode = "00";
+    hexCode = "00";
     return hexCode;
 }
 
@@ -74,37 +59,52 @@ function decToHexa(n)
 
 /* <label for="selection"><small class="class">border-style</small>: </label>
 <select onchange="OnBorderSelect()" class="custom-select" id="selection">
-    <option value="solid">solid</option>
-    <option value="dashed">dashed</option>
-    <option value="dotted">dotted</option>
-    <option value="double">double</option>
-    <option value="ridge">ridge</option>
-    <option value="groove">groove</option>
+<option value="solid">solid</option>
+<option value="dashed">dashed</option>
+<option value="dotted">dotted</option>
+<option value="double">double</option>
+<option value="ridge">ridge</option>
+<option value="groove">groove</option>
     <option value="outset">outset</option>
     <option value="inset">inset</option>
     </select> <br><br>
     <label for="input"><small class="class">border-width</small>: </label>
     <input onchange="OnBorderWidthInput()" type="number" class="custom-input" id="width-input"> <br><br>
     <label for="input"><small class="class">border-radius</small>: </label>
-                <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
+    <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
     <div class="color-picker">
-        <label for="red">Red (0 to 255)</label>
-        <input onchange="OnColorChange()" type="range" id="red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
-        <label for="green">Red (0 to 255)</label>
-        <input onchange="OnColorChange()" type="range" id="green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
-        <label for="blue">Red (0 to 255)</label>
-        <input onchange="OnColorChange()" type="range" id="blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+    <label for="red">Red (0 to 255)</label>
+    <input onchange="OnColorChange()" type="range" id="red" name="red" min="0" max="255" value="0"> <p id="red-value">Red: 0</p>
+    <label for="green">Red (0 to 255)</label>
+    <input onchange="OnColorChange()" type="range" id="green" name="green" min="0" max="255" value="58"> <p id="green-value">Green: 58</p>
+    <label for="blue">Red (0 to 255)</label>
+    <input onchange="OnColorChange()" type="range" id="blue" name="blue" min="0" max="255" value="67"> <p id="blue-value">Blue: 67</p>
     </div>
-</div>
-<div class="image-box">
+    </div>
+    <div class="image-box">
     <div id="object" class="object">
-        
+    
     </div>
-</div> */
-
-function OnBorderSelect() {
-    const chnageable = document.getElementById("object");
-    const selection = document.getElementById("selection");
+    </div> */
+    function OnBorderColorPick() {
+        const red = document.getElementById("red");
+        const green = document.getElementById("green");
+        const blue = document.getElementById("blue");
+        const redNum = document.getElementById("red-value");
+        const greenNum = document.getElementById("green-value");
+        const blueNum = document.getElementById("blue-value");
+        const imageElement = document.getElementById("object");
+        const colorDisplayer = document.getElementById("color-display");
+        colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+        redNum.innerText = `Red: ${red.value}`
+        greenNum.innerText = `Green: ${green.value}`
+        blueNum.innerText = `Blue: ${blue.value}`
+        imageElement.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
+    }
+    
+    function OnBorderSelect() {
+        const chnageable = document.getElementById("object");
+        const selection = document.getElementById("selection");
     chnageable.style.borderStyle = `${selection.value}`;
 }
 
@@ -122,11 +122,11 @@ function OnBorderRadiusInput() {
 
 /* <div class="color-picker">
                     <label for="red">Red (0 to 255)</label>
-                    <input onchange="OnHoverColor()" type="range" id="hover-red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
+                    <input onchange="OnHoverColor()" type="range" id="hover-red" name="red" min="0" max="255" value="0"> <p id="red-value">Red: 0</p>
                     <label for="green">Green (0 to 255)</label>
-                    <input onchange="OnHoverColor()" type="range" id="hover-green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
+                    <input onchange="OnHoverColor()" type="range" id="hover-green" name="green" min="0" max="255" value="58"> <p id="green-value">Green: 58</p>
                     <label for="blue">Blue (0 to 255)</label>
-                    <input onchange="OnHoverColor()" type="range" id="hover-blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+                    <input onchange="OnHoverColor()" type="range" id="hover-blue" name="blue" min="0" max="255" value="67"> <p id="blue-value">Blue: 67</p>
                 </div>
                 <p id="color-display">Color code on hover: #808080</p> */
 function OnHoverColor() {
@@ -183,7 +183,14 @@ function OnActiveOpacity() {
     document.getElementsByTagName('head')[0].appendChild(style);
 }
 
-//code
+/* <div class="color-picker">
+                            <label for="red">Red (0 to 255)</label>
+                            <input onchange="OnBorderColorPick()" type="range" id="border-red" name="red" min="0" max="255" value="0"> <p id="red-border-value">Red: 0</p>
+                            <label for="green">Green (0 to 255)</label>
+                            <input onchange="OnBorderColorPick()" type="range" id="border-green" name="green" min="0" max="255" value="58"> <p id="green-border-value">Green: 58</p>
+                            <label for="blue">Blue (0 to 255)</label>
+                            <input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255" value="67"> <p id="blue-border-value">Blue: 67</p>
+                        </div> */
 function OnBorderColorPick() {
     const red = document.getElementById("border-red");
     const green = document.getElementById("border-green");
