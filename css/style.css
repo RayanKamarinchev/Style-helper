@@ -285,3 +285,23 @@ input[type=text], input[type=number]{
   box-sizing: border-box;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
+
+.object{
+  cursor: pointer;
+  font-size: 30px;
+  border: solid #808080;
+	width: 200px;
+	height: 100px;
+	background-color: #808080;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/buttons.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -104,6 +105,78 @@
                         }
                     </code>
                 </div>
+            </div>
+            <hr>
+            <h2>Button editor</h2>
+            <div>
+                <h3>On Hover</h3>
+                <div class="color-picker">
+                    <label for="red">Red (0 to 255)</label>
+                    <input onchange="OnHoverColor()" type="range" id="hover-red" name="red" min="0" max="255"> <p id="red-hover-value">Red: 128</p>
+                    <label for="green">Green (0 to 255)</label>
+                    <input onchange="OnHoverColor()" type="range" id="hover-green" name="green" min="0" max="255"> <p id="green-hover-value">Green: 128</p>
+                    <label for="blue">Blue (0 to 255)</label>
+                    <input onchange="OnHoverColor()" type="range" id="hover-blue" name="blue" min="0" max="255"> <p id="blue-hover-value">Blue: 128</p>
+                </div>
+                <label for="input"><small class="class">opacity</small>: </label>
+                <input onchange="OnHoverOpacity()" type="number" class="custom-input" id="opcity-hover-input"> <br><br>
+                <h3>On Click</h3>
+                <label for="input"><small class="class">opacity</small>: </label>
+                <input onchange="OnActiveOpacity()" type="number" class="custom-input" id="opcity-active-input"> <br><br>
+                <h3>Border</h3>
+                <label for="selection"><small class="class">border-style</small>: </label>
+                <select onchange="OnBorderSelect()" class="custom-select" id="selection">
+                    <option value="solid">solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="dotted">dotted</option>
+                    <option value="double">double</option>
+                    <option value="ridge">ridge</option>
+                    <option value="groove">groove</option>
+                    <option value="outset">outset</option>
+                    <option value="inset">inset</option>
+                </select> <br><br>
+                <label for="input"><small class="class">border-width</small>: </label>
+                <input onchange="OnBorderWidthInput()" type="number" class="custom-input" id="width-input"> <br><br>
+                <label for="input"><small class="class">border-radius</small>: </label>
+                <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
+                <div class="color-picker">
+                    <label for="red">Red (0 to 255)</label>
+                    <input onchange="OnBorderColorPick()" type="range" id="border-red" name="red" min="0" max="255"> <p id="red-border-value">Red: 128</p>
+                    <label for="green">Green (0 to 255)</label>
+                    <input onchange="OnBorderColorPick()" type="range" id="border-green" name="green" min="0" max="255"> <p id="green-border-value">Green: 128</p>
+                    <label for="blue">Blue (0 to 255)</label>
+                    <input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255"> <p id="blue-border-value">Blue: 128</p>
+                </div>
+                <h3>Color</h3>
+    <div class="color-picker">
+        <label for="red">Red (0 to 255)</label>
+        <input onchange="OnColorChange()" type="range" id="red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
+        <label for="green">Red (0 to 255)</label>
+        <input onchange="OnColorChange()" type="range" id="green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
+        <label for="blue">Red (0 to 255)</label>
+        <input onchange="OnColorChange()" type="range" id="blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+    </div>
+</div>
+<div class="image-box">
+    <div id="object" class="object">
+        
+    </div>
+</div>
+                <h3>Color</h3>
+                <div class="color-picker">
+                    <label for="red">Red (0 to 255)</label>
+                    <input onchange="OnColorPick()" type="range" id="red-color" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
+                    <label for="green">Green (0 to 255)</label>
+                    <input onchange="OnColorPick()" type="range" id="green-color" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
+                    <label for="blue">Blue (0 to 255)</label>
+                    <input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+                </div>
+            </div>
+            <p id="color-hover-display">Color code on hover: #808080</p>
+            <p id="color-display">Color code: #808080</p>
+            <p id="color-border-display">Border color code: #808080</p>
+            <div class="image-box">
+                <div id="object" class="object"><p class="centered">Click Me!</p></div>
             </div>
             <hr>
             <h2>Напреднал пример</h2>

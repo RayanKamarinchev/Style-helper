@@ -1,4 +1,4 @@
-function OnChange() {
+function OnColorPick() {
     const red = document.getElementById("red");
     const green = document.getElementById("green");
     const blue = document.getElementById("blue");
@@ -16,20 +16,11 @@ function OnChange() {
 
 function decToHexa(n)
 {
-    // char array to store hexadecimal number
     let hexaDeciNum = Array.from({length: 2}, (_, i) => 0);
-    
-    // counter for hexadecimal number array
     let i = 0;
     while (n != 0) {
-    
-        // temporary variable to store remainder
         let temp = 0;
-    
-        // storing remainder in temp variable.
         temp = n % 16;
-    
-        // check if temp < 10
         if (temp < 10) {
             hexaDeciNum[i] = String.fromCharCode(temp + 48);
             i++;
@@ -38,10 +29,8 @@ function decToHexa(n)
             hexaDeciNum[i] =  String.fromCharCode(temp + 55);
             i++;
         }
-    
         n = Math.floor(n / 16);
     }
-    
     let hexCode = "";
     if (i == 2) {
         hexCode+=hexaDeciNum[0];
@@ -53,8 +42,5 @@ function decToHexa(n)
     }
     else if (i == 0)
         hexCode = "00";
-    
-    // Return the equivalent
-    // hexadecimal color code
     return hexCode;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/borders.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
-    <script src="../js/borders.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -60,8 +60,7 @@
             <h2>Border changer</h2>
             <div class="border-chnager">
                 <label for="selection"><small class="class">border-style</small>: </label>
-                <select onchange="OnSelect()" class="custom-select" id="selection">
-                    <option disabled selected value="0">Select border:</option>
+                <select onchange="OnBorderSelect()" class="custom-select" id="selection">
                     <option value="solid">solid</option>
                     <option value="dashed">dashed</option>
                     <option value="dotted">dotted</option>
@@ -72,18 +71,21 @@
                     <option value="inset">inset</option>
                 </select> <br><br>
                 <label for="input"><small class="class">border-width</small>: </label>
-                <input onchange="OnInput()" type="number" class="custom-input" id="input"> <br><br>
+                <input onchange="OnBorderWidthInput()" type="number" class="custom-input" id="width-input"> <br><br>
+                <label for="input"><small class="class">border-radius</small>: </label>
+                <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
                 <div class="color-picker">
                     <label for="red">Red (0 to 255)</label>
-                    <input onchange="OnChange()" type="range" id="red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
+                    <input onchange="OnBorderColorPick()" type="range" id="red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
                     <label for="green">Red (0 to 255)</label>
-                    <input onchange="OnChange()" type="range" id="green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
+                    <input onchange="OnBorderColorPick()" type="range" id="green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
                     <label for="blue">Red (0 to 255)</label>
-                    <input onchange="OnChange()" type="range" id="blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+                    <input onchange="OnBorderColorPick()" type="range" id="blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
                 </div>
+                <p id="color-display">Color code: #808080</p>
             </div>
             <div class="image-box">
-                <div id="border-chnager-example">
+                <div id="object" class="object">
                     
                 </div>
             </div>
