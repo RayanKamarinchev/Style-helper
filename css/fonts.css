@@ -32,7 +32,7 @@
 
 .text {
   position: absolute;
-  top: 180%; 
+  top: 300%; 
   right: 40%;
   transform: translate(50%,-50%);
   text-transform: uppercase;

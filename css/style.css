@@ -248,9 +248,7 @@ span{
 }
 
 .image-box{
-  margin-left: 200px;
   position: relative;
-  margin-top: 20px;
   overflow: hidden;
   text-align: center;
   height: 300px;
@@ -289,7 +287,6 @@ input[type=text], input[type=number]{
 
 .object{
   cursor: pointer;
-  font-size: 30px;
   border: solid #0094aa;
 	width: 200px;
 	height: 100px;

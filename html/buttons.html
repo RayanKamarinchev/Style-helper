@@ -169,6 +169,29 @@
                             <input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255" value="67"> <p id="blue-value">Blue: 67</p>
                         </div> 
                     </div>
+                    <button class="accordion" onclick="OnClick5()">Font</button>
+                    <div class="panel">
+                        <label for="family-selector"><small class="class">font-family</Small>: </label>
+                            <select onchange="OnFontFamillyChange()" class="custom-select" id="family-selection">
+                              <option value="sans-serif">Sans-serif</option>
+                              <option value="serif">Serif</option>
+                              <option value="monospace">Monospace</option>
+                              <option value="cursive">Cursive</option>
+                              <option value="fantasy">Fantasy</option>
+                            </select><br><br>
+                            <label for="style-selector"><small class="class">font-style</Small>: </label>
+                              <select onchange="OnFontStyleChange()" class="custom-select" id="style-selection">
+                                <option value="normal">Normal</option>
+                                <option value="italic">Italic</option>
+                              </select><br><br>
+                            <label for="weight-selection"><small class="class">font-weight</Small>: </label>
+                            <select onchange="OnFontWeidhtChange()" class="custom-select" id="weight-selection">
+                              <option value="normal">Normal</option>
+                              <option value="bold">Bold</option>
+                            </select><br><br>
+                            <label for="input"><small class="class">font-size</small>: </label>
+                            <input value="20" onchange="OnFontSizeChange()" type="number" class="custom-input" id="font-size-selection"> <br><br>   
+                    </div>
                 </div>
                 <div class="image-box">
                     <div id="object" class="object"><p class="centered">Click Me!</p></div>

@@ -206,3 +206,47 @@ function OnBorderColorPick() {
     blueNum.innerText = `Blue: ${blue.value}`
     chnageable.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
 }
+
+/* <label for="family-selector"><small class="class">font-family</Small>: </label>
+                  <select onchange="OnFontFamillyChange()" class="custom-select" id="family-selection">
+                    <option value="sans-serif">Sans-serif</option>
+                    <option value="serif">Serif</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="fantasy">Fantasy</option>
+                  </select><br><br>
+                  <label for="style-selector"><small class="class">font-style</Small>: </label>
+                    <select onchange="OnFontStyleChange()" class="custom-select" id="style-selection">
+                      <option value="normal">Normal</option>
+                      <option value="italic">Italic</option>
+                    </select><br><br>
+                  <label for="weight-selection"><small class="class">font-weight</Small>: </label>
+                  <select onchange="OnFontWeidhtChange()" class="custom-select" id="weight-selection">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                  </select><br><br>
+                  <label for="input"><small class="class">font-size</small>: </label>
+                  <input value="20" onchange="OnFontSizeChange()" type="number" class="custom-input" id="font-size-selection"> <br><br>   */
+function OnFontFamillyChange() {
+    const editable = document.getElementsByClassName("centered")[0]
+    const selection = document.getElementById("family-selection")
+    editable.style.fontFamily = `${selection.value}`
+}
+
+function OnFontStyleChange() {
+    const editable = document.getElementsByClassName("centered")[0]
+    const selection = document.getElementById("style-selection")
+    editable.style.fontStyle = `${selection.value}`
+}
+
+function OnFontWeidhtChange() {
+    const editable = document.getElementsByClassName("centered")[0]
+    const selection = document.getElementById("weight-selection")
+    editable.style.fontWeight = `${selection.value}`
+}
+
+function OnFontSizeChange() {
+    const editable = document.getElementsByClassName("centered")[0]
+    const selection = document.getElementById("font-size-selection")
+    editable.style.fontSize = `${selection.value}px`
+}

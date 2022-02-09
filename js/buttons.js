@@ -33,3 +33,12 @@ function OnClick4() {
         panel.style.display = "block";
     }
 }
+
+function OnClick5() {
+    var panel = document.getElementsByClassName("panel")[4];
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "block";
+    }
+}
