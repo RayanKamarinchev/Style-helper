@@ -75,3 +75,11 @@
 .center .inputbox:hover [type="button"] {
   background: linear-gradient(45deg, greenyellow, dodgerblue);
 }
+
+#put{
+  outline: none;
+  border: solid #0094aa;
+	background-color: white;;
+  border-radius: 0px;
+  padding: 12px;
+}

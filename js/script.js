@@ -95,7 +95,7 @@ function decToHexa(n)
         const blueNum = document.getElementById("blue-value");
         const imageElement = document.getElementById("object");
         const colorDisplayer = document.getElementById("color-display");
-        colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+        colorDisplayer.innerText=`Border color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
         redNum.innerText = `Red: ${red.value}`
         greenNum.innerText = `Green: ${green.value}`
         blueNum.innerText = `Blue: ${blue.value}`
@@ -191,21 +191,6 @@ function OnActiveOpacity() {
                             <label for="blue">Blue (0 to 255)</label>
                             <input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255" value="67"> <p id="blue-border-value">Blue: 67</p>
                         </div> */
-function OnBorderColorPick() {
-    const red = document.getElementById("border-red");
-    const green = document.getElementById("border-green");
-    const blue = document.getElementById("border-blue");
-    const redNum = document.getElementById("red-border-value");
-    const greenNum = document.getElementById("green-border-value");
-    const blueNum = document.getElementById("blue-border-value");
-    const colorDisplayer = document.getElementById("color-border-display");
-    const chnageable = document.getElementById("object");
-    colorDisplayer.innerText=`Color code on hover: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
-    redNum.innerText = `Red: ${red.value}`
-    greenNum.innerText = `Green: ${green.value}`
-    blueNum.innerText = `Blue: ${blue.value}`
-    chnageable.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
-}
 
 /* <label for="family-selector"><small class="class">font-family</Small>: </label>
                   <select onchange="OnFontFamillyChange()" class="custom-select" id="family-selection">
