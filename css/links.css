@@ -67,3 +67,20 @@ a{
     width: 100%;
   }
 }
+
+.object{
+  cursor: pointer;
+  border: none;
+  background-color: white;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.centered{
+  text-decoration: underline;
+  color: #0094aa;
+}

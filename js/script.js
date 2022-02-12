@@ -14,14 +14,21 @@
     const redNum = document.getElementById("red-value");
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
-    const imageElement = document.getElementById("object");
     const colorDisplayer = document.getElementById("color-display");
-    console.log(red.value)
     colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    imageElement.style.backgroundColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
+    var css = `#object{ background-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var style = document.createElement('style');
+    
+    if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+    } else {
+    style.appendChild(document.createTextNode(css));
+    }
+    
+    document.getElementsByTagName('head')[0].appendChild(style);
 }
 
 function decToHexa(n)
@@ -87,12 +94,12 @@ function decToHexa(n)
     </div>
     </div> */
     function OnBorderColorPick() {
-        const red = document.getElementById("red");
-        const green = document.getElementById("green");
-        const blue = document.getElementById("blue");
-        const redNum = document.getElementById("red-value");
-        const greenNum = document.getElementById("green-value");
-        const blueNum = document.getElementById("blue-value");
+        const red = document.getElementById("border-red");
+        const green = document.getElementById("border-green");
+        const blue = document.getElementById("border-blue");
+        const redNum = document.getElementById("red-border-value");
+        const greenNum = document.getElementById("green-border-value");
+        const blueNum = document.getElementById("blue-border-value");
         const imageElement = document.getElementById("object");
         const colorDisplayer = document.getElementById("color-display");
         colorDisplayer.innerText=`Border color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
@@ -100,6 +107,7 @@ function decToHexa(n)
         greenNum.innerText = `Green: ${green.value}`
         blueNum.innerText = `Blue: ${blue.value}`
         imageElement.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
+        
     }
     
     function OnBorderSelect() {
