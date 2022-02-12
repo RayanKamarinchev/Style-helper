@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/gradients.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
+    <script src="../js/gradients.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -89,6 +90,39 @@
             <hr>
             <div id="repeating-gradient">
 
+            </div>
+            <hr>
+            <h2>Gradient editor</h2>
+            <div class="example">
+                <div>
+                    <div class="color-picker">
+                        <label for="red">Red (0 to 255)</label>
+                        <input onchange="OnColorPick()" type="range" id="red-color" name="red" min="0" max="255" value="0"> <p id="red-value">Red: 0</p>
+                        <label for="green">Green (0 to 255)</label>
+                        <input onchange="OnColorPick()" type="range" id="green-color" name="green" min="0" max="255" value="147"> <p id="green-value">Green: 147</p>
+                        <label for="blue">Blue (0 to 255)</label>
+                        <input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255" value="170"> <p id="blue-value">Blue: 170</p>
+                    </div>
+                    <div id="color-box">
+
+                    </div>
+                    <p id="color-display">Color code: #0094AA</p><br>
+                    <select onchange="OnChange()" class="custom-select" id="selection">
+                        <option value="" disabled selected>Gradient type</option>
+                        <option value="linear">linear</option>
+                        <option value="radial">radial</option>
+                        <option value="conic">conic</option>
+                    </select>
+                    <div class="input-div">
+                        <br>
+                        <input onchange="OnChange()" type="text" class="custom-input" id="width-input">
+                        <p class="transform-example">(direstion), color1 {x%}, color2 {y%}...</p><br>
+                        <p>direction can be: to left, to top, to right bottom...</p>
+                    </div>
+                </div>
+                <div class="image-box">
+                    
+                </div>
             </div>
         </div>
     </div>

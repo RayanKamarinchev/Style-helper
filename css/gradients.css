@@ -61,3 +61,24 @@
     height: 200px;
     text-align: center;
 }
+
+.transform-example{
+    display: inline;
+    text-align: center;
+    color: rgb(95, 95, 95);
+  }
+
+  .input-div{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  #color-box{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0094aa;
+    border: black 3px solid;
+  }
