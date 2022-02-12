@@ -255,6 +255,7 @@ span{
   width: 300px;
   background-color: white;
   border: black 3px solid;
+  margin-left: 200px;
 }
 
 .custom-select{
