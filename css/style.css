@@ -90,7 +90,8 @@ body{
 }
 
 .code-show{
-    padding-right: 50px;
+  position: relative;
+
     border: 5px dashed gray;
     height: 200px;
     margin-left: 50px;
@@ -325,3 +326,18 @@ input[type=text], input[type=number]{
   background-color: #d6d6d6;
   overflow: hidden;
 }
+
+.copy-btn{
+  font-size: 20px;
+  color: #0094aa;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.push{
+  position: sticky;
+  top: 0;
+  right: 0;}

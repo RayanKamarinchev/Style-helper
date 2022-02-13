@@ -266,3 +266,18 @@ function OnShadow() {
     const selectionOpacity = document.getElementById("opacity-shadow-input")
     editable.style.textShadow = `${selectionHor.value}px ${selectionVert.value}px ${selectionBlur.value}px rgb(0,0,0,${selectionOpacity.value})`
 }
+
+function Copy1() {
+    const textCopy= document.getElementsByClassName("code-show")[0].innerText;
+    navigator.clipboard.writeText(textCopy);
+}
+
+function Copy2() {
+    const textCopy= document.getElementsByClassName("code-show")[1].innerText;
+    navigator.clipboard.writeText(textCopy);
+}
+
+function Copy3() {
+    const textCopy= document.getElementsByClassName("code-show")[2].innerText;
+    navigator.clipboard.writeText(textCopy);
+}
