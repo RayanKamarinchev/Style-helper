@@ -243,3 +243,26 @@ function OnFontSizeChange() {
     const selection = document.getElementById("font-size-selection")
     editable.style.fontSize = `${selection.value}px`
 }
+
+{/* <label for="input"><small class="class">horizontal shadow</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="vert-shadow-input"> <br><br>
+                <label for="input"><small class="class">vertical shadow</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="hor-shadow-input"> <br><br>
+                <label for="input"><small class="class">blur</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="blur-shadow-input"> <br><br> 
+                <div class="color-picker">
+                  <label for="red">Red (0 to 255)</label>
+                  <input onchange="OnShadow()" type="range" id="shadow-red" name="red" min="0" max="255" value="0"> <p id="red-shadow-value">Red: 0</p>
+                  <label for="green">Green (0 to 255)</label>
+                  <input onchange="OnShadow()" type="range" id="shadow-green" name="green" min="0" max="255" value="58"> <p id="green-shadow-value">Green: 58</p>
+                  <label for="blue">Blue (0 to 255)</label>
+                  <input onchange="OnShadow()" type="range" id="shadow-blue" name="blue" min="0" max="255" value="67"> <p id="blue-shadow-value">Blue: 67</p> */}
+
+function OnShadow() {
+    const editable = document.getElementsByClassName("centered")[0]
+    const selectionVert = document.getElementById("vert-shadow-input")
+    const selectionHor = document.getElementById("hor-shadow-input")
+    const selectionBlur = document.getElementById("blur-shadow-input")
+    const selectionOpacity = document.getElementById("opacity-shadow-input")
+    editable.style.textShadow = `${selectionHor.value}px ${selectionVert.value}px ${selectionBlur.value}px rgb(0,0,0,${selectionOpacity.value})`
+}

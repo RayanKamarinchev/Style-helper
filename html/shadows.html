@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/shadows.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -90,6 +91,24 @@
                     </code>
                 </div>
             </div>
+            <hr>
+            <h2>Shadow editor</h2>
+            <div class="example">
+              <div>
+                <label for="input"><small class="class">horizontal shadow</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="vert-shadow-input" value="0"> <br><br>
+                <label for="input"><small class="class">vertical shadow</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="hor-shadow-input" value="0"> <br><br>
+                <label for="input"><small class="class">blur</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="blur-shadow-input" value="0"> <br><br>
+                <label for="input"><small class="class">opacity</small>: </label>
+                <input onchange="OnShadow()" type="number" class="custom-input" id="opacity-shadow-input" value="1"> <br><br>
+              </div>
+              <div class="image-box">
+                <h1 class="centered">SHADOW</h1>
+              </div>
+            </div>
+          <p id="color-shadow-display">Color code on hover: #000000</p>
             <hr>
             <h2>Напреднал пример</h2>
             <h4>Hello World!</h4>
