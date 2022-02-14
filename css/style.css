@@ -109,6 +109,8 @@ body{
 
 .prop{
     color: #FC440F;
+    display: inline-block;
+    margin-left: 40px;
 }
 
 .out{
@@ -349,3 +351,8 @@ input[type=text], input[type=number]{
   .imp-img{
     border: black 5px solid;
   }
+
+  .tab {
+    display: inline-block;
+    margin-left: 40px;
+}
