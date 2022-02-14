@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="pics/icons8-drawing-48.png"/>
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/panels.js"></script>
 </head>
 <body>
     <div class="layout">
@@ -18,8 +20,77 @@
             <a class="active" href="#"><p><i class="fas fa-id-card"></i> Contact</p></a>
           </div>
         <div class="content" style="margin-left: 0;">
-            <h1>Contact</h1>
-            
+            <h1>Contact Page</h1><hr>
+            <h2>Info</h2>
+            <div class="example">
+                <div>
+                    <img class="imp-img" src="pics/me.jpg" alt="me" height="300px">
+                </div>
+                <div class="code-show" style="margin-left: 100px;">
+                    <p><small class="class">Name</small>: <small class="bold-txt">Раян Камаринчев</small></p><br>
+                    <p><small class="class">Age</small>: <small class="bold-txt">13</small></p><br>
+                    <p><small class="class">School</small>: <small class="bold-txt">ППМГ Добри Чинтулов</small></p><br>
+                    <p><small class="class">City</small>: <small class="bold-txt">Сливен</small></p><br>
+                    <p><small class="class">Birthday</small>: <small class="bold-txt">17 юли 2008</small></p>
+                </div>
+            </div>
+            <hr>
+            <h2>About Me</h2>
+            <div class="example">
+                <div>
+                    <img class="imp-img" src="pics/I.jpg" alt="me" height="300px">
+                </div>
+                <div style="margin-left: 50px;">
+                    <p>Казвам се Раян Камаринчев, уча в ППМГ Добри Чинтулов и съм 7 клас. Интересувам се от програмиране от 5ти клас. Учил съм обектно ориентирано програмиране със C# в SoftUni, HTML, CSS и JS в Telerik. Освен с програмиране се занимавам и с математика, спечелил съм над 50 медала от международни състезания. Занимавам се с това което най-много харесвам!</p>
+                </div>
+            </div>
+            <hr>
+            <h2>Contacts</h2>
+            <br><br><br><br>
+            <ul>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100077942102799">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span> - Раян Камаринчев</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/RayanKamarinchev">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <span> - Rayan Kamarinchev</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="fas fa-at" aria-hidden="true"></i>
+                    <span> - rayan2008bg</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="fab fa-discord" aria-hidden="true"></i>
+                    <span> - RayanFMG</span>
+                  </a>
+                </li>
+            </ul><br><br><br><br>
+            <hr>
+            <img src="pics/software-university-logo.svg" alt="Software University" height="100px"><br>
+            <button class="accordion" onclick="OnClick1()">Programming basics with C#</button>
+            <div class="panel" id="pannel"><br>
+                <img style="border-radius: 10px;" src="pics/73113.jpg" alt="sertificate" height="500px">
+    	    </div>
+            <button class="accordion" onclick="OnClick2()">C# Fundamentals</button>
+            <div class="panel" id="pannel"><br>
+                <img style="border-radius: 10px;" src="pics/86064.jpg" alt="sertificate" height="500px">
+    	    </div>
+            <button class="accordion" onclick="OnClick3()">C# Advanced</button>
+            <div class="panel" id="pannel"><br>
+                <img style="border-radius: 10px;" src="pics/108739.jpg" alt="sertificate" height="500px">
+    	    </div>
+            <button class="accordion" onclick="OnClick4()">C# OOP</button>
+            <div class="panel" id="pannel"><br>
+                <img style="border-radius: 10px;" src="pics/113122.jpg" alt="sertificate" height="500px">
+    	    </div><br>
         </div>
     </div>
 </body>

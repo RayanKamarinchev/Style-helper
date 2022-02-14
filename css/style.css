@@ -341,3 +341,11 @@ input[type=text], input[type=number]{
   position: sticky;
   top: 0;
   right: 0;}
+
+  .bold-txt{
+    font-weight: bold;
+  }
+
+  .imp-img{
+    border: black 5px solid;
+  }
