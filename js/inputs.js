@@ -11,7 +11,16 @@ function OnBorderColorPick() {
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    chnageable.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
+    var css = `#put{ border-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var style = document.createElement('style');
+    
+    if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+    } else {
+    style.appendChild(document.createTextNode(css));
+    }
+    
+    document.getElementsByTagName('head')[0].appendChild(style);
 }
 function OnBorderSelect() {
     const chnageable = document.getElementById("put");
@@ -62,14 +71,21 @@ function OnColorPick() {
     const redNum = document.getElementById("red-value");
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
-    const imageElement = document.getElementById("put");
     const colorDisplayer = document.getElementById("color-display");
-    console.log(red.value)
     colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    imageElement.style.backgroundColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
+    var css = `#put{ background-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var style = document.createElement('style');
+    
+    if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+    } else {
+    style.appendChild(document.createTextNode(css));
+    }
+    
+    document.getElementsByTagName('head')[0].appendChild(style);
 }
 
 function decToHexa(n)

@@ -15,13 +15,12 @@
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
     const colorDisplayer = document.getElementById("color-display");
-    colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    colorDisplayer.innerText=`Color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#object{ background-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `#object{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
-    
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
     } else {
@@ -31,35 +30,13 @@
     document.getElementsByTagName('head')[0].appendChild(style);
 }
 
-function decToHexa(n)
+function decToHexa(number)
 {
-    let hexaDeciNum = Array.from({length: 2}, (_, i) => 0);
-    let i = 0;
-    while (n != 0) {
-        let temp = 0;
-        temp = n % 16;
-        if (temp < 10) {
-            hexaDeciNum[i] = String.fromCharCode(temp + 48);
-            i++;
-        }
-        else {
-            hexaDeciNum[i] =  String.fromCharCode(temp + 55);
-            i++;
-        }
-        n = Math.floor(n / 16);
-    }
-    let hexCode = "";
-    if (i == 2) {
-        hexCode+=hexaDeciNum[0];
-        hexCode+=hexaDeciNum[1];
-    }
-    else if (i == 1) {
-        hexCode = "0";
-        hexCode+=hexaDeciNum[0];
-    }
-    else if (i == 0)
-    hexCode = "00";
-    return hexCode;
+  return Number(number).toString(16)
+}
+
+function pad(n) {
+    return (n < 10) ? ("0" + n) : n;
 }
 
 
@@ -100,14 +77,20 @@ function decToHexa(n)
         const redNum = document.getElementById("red-border-value");
         const greenNum = document.getElementById("green-border-value");
         const blueNum = document.getElementById("blue-border-value");
-        const imageElement = document.getElementById("object");
-        const colorDisplayer = document.getElementById("color-display");
-        colorDisplayer.innerText=`Border color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+        const colorDisplayer = document.getElementById("color-border-display");
+        console.log(`Border color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`)
+        colorDisplayer.innerText=`Border color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
         redNum.innerText = `Red: ${red.value}`
         greenNum.innerText = `Green: ${green.value}`
         blueNum.innerText = `Blue: ${blue.value}`
-        imageElement.style.borderColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
-        
+        var css = `#object{ border-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
+        var style = document.createElement('style');
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style); 
     }
     
     function OnBorderSelect() {
@@ -145,11 +128,12 @@ function OnHoverColor() {
     const greenNum = document.getElementById("green-hover-value");
     const blueNum = document.getElementById("blue-hover-value");
     const colorDisplayer = document.getElementById("color-hover-display");
-    colorDisplayer.innerText=`Color code on hover: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    colorDisplayer.innerText=`Color code on hover: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#object:hover{ background-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    console.log(decToHexa(red.value))
+    var css = `#object:hover{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {

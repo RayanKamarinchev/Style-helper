@@ -291,7 +291,7 @@ input[type=text], input[type=number]{
 
 .object{
   cursor: pointer;
-  border: solid #0094aa;
+  border: solid #808080;
 	width: 200px;
 	height: 100px;
 	background-color: #0094aa;
