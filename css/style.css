@@ -21,7 +21,7 @@ body{
     position: fixed;
     top: 0;
     bottom: 0;
-    margin-top: 46px;
+    margin-top: 60px;
 }
 
 .content{
@@ -32,10 +32,11 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     flex-grow: 1;
-    margin-top: 46px;
+    margin-top: 60px;
 }
 
 .navbar {
+  align-items: center;
     z-index: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -210,12 +211,13 @@ span{
 
   
   .navbar a {
+    align-items: center;
     display: flex;
     float: left;
-    padding: 12px;
+    padding: 17px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 23px;
   }
   
   .navbar a:hover {
@@ -355,4 +357,8 @@ input[type=text], input[type=number]{
   .tab {
     display: inline-block;
     margin-left: 40px;
+}
+
+#the_logo{
+  padding: 4px;
 }
