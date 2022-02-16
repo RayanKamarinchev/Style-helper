@@ -78,7 +78,6 @@ function pad(n) {
         const greenNum = document.getElementById("green-border-value");
         const blueNum = document.getElementById("blue-border-value");
         const colorDisplayer = document.getElementById("color-border-display");
-        console.log(`Border color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`)
         colorDisplayer.innerText=`Border color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
         redNum.innerText = `Red: ${red.value}`
         greenNum.innerText = `Green: ${green.value}`
@@ -94,21 +93,39 @@ function pad(n) {
     }
     
     function OnBorderSelect() {
-        const chnageable = document.getElementById("object");
         const selection = document.getElementById("selection");
-    chnageable.style.borderStyle = `${selection.value}`;
+        var css = `#object{ border-style: ${selection.value}}`;
+        var style = document.createElement('style');
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style); 
 }
 
 function OnBorderWidthInput() {
-    const chnageable = document.getElementById("object");
     const input = document.getElementById("width-input");
-    chnageable.style.borderWidth = `${input.value}px`;
+    var css = `#object{ border-width: ${input.value}px}`;
+        var style = document.createElement('style');
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style); 
 }
 
 function OnBorderRadiusInput() {
-    const chnageable = document.getElementById("object");
     const input = document.getElementById("radius-input");
-    chnageable.style.borderRadius = `${input.value}px`;
+    var css = `#object{ border-radius: ${input.value}px}`;
+        var style = document.createElement('style');
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        document.getElementsByTagName('head')[0].appendChild(style); 
 }
 
 /* <div class="color-picker">
