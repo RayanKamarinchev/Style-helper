@@ -12,23 +12,23 @@ body{
 }
 
 .navbar {
-    z-index: 1;
-  display: flex;
-  flex-flow: row nowrap;
-  position: fixed;
-  width: 100%;
-  background-color: #11202c;
-  overflow: auto;
-}
-
+    align-items: center;
+      z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: #11202c;
+    overflow: auto;
+  }
 .content{
+    margin-top: 60px;
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     flex-grow: 1;
-    margin-top: 46px;
 }
 
 .content h1{
@@ -55,11 +55,20 @@ body{
     width: 100%;
 }
 
-.navbar a {
+#the_logo{
+    padding: 4px;
+  }
+
+  .navbar a {
+    align-items: center;
     display: flex;
     float: left;
-    padding: 12px;
+    padding: 17px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 23px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
   }

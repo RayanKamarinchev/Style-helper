@@ -81,7 +81,7 @@ svg {
   h2{
       font-size: 30px;
   }
-  p{
+  .content p{
       font-size: 20px;
   }
 
@@ -120,4 +120,33 @@ svg {
   .btn:hover {
     background: #0094aa;
     color: black;
+  }
+
+  .navbar a {
+    align-items: center;
+    display: flex;
+    float: left;
+    padding: 17px;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  #the_logo{
+    padding: 4px;
+  }
+
+  .navbar {
+    align-items: center;
+      z-index: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: #11202c;
+    overflow: auto;
   }
