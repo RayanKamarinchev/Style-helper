@@ -364,7 +364,7 @@ input[type=text], input[type=number]{
 }
 
 .footer-clean {
-  width: 111%;
+  margin-left: 20%;
   padding:50px 0;
   background-color: #11202c;
   color: white;

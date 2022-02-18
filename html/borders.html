@@ -105,24 +105,66 @@
             <p id="border-image-example"><small class="out">border-image</small>:url(border.png) 30 rounded | (image url) (на кой пиксел разделяме картината)(да се повтаря или разтяга)</p>
             <hr>
             <h2>Напреднал пример</h2>
-            <div class="gradient-border">css<br />is<br />awesome</div><br><br>
-            <div class="footer-clean">
-                <footer>
-                    <div class="container">
-                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                            <div class="col-lg-3 item social">
-                                <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
-                                <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
-                                <p>Email - rayan2008bg@gmail.com</p>
-                                <hr>
-                                <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
-                                <p class="copyright">© Copyright 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+            <div class="gradient-border">css<br />is<br />awesome</div><br><br><br>
+            <div class="code-show">
+                <div class="push">
+                    <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                </div>
+                <code>
+                    @import url("https://fonts.googleapis.com/css?family=Lato:300");<br>
+ .gradient-border {<br>
+	 --border-width: 3px;<br>
+	 position: relative;<br>
+	 display: flex;<br>
+	 justify-content: center;<br>
+	 align-items: center;<br>
+	 width: 300px;<br>
+	 height: 200px;<br>
+	 font-family: Lato, sans-serif;<br>
+	 font-size: 2.5rem;<br>
+	 text-transform: uppercase;<br>
+	 color: white;<br>
+	 background: #222;<br>
+	 border-radius: var(--border-width);<br>
+}<br><br>
+ .gradient-border::after {<br>
+	 position: absolute;<br>
+	 content: "";<br>
+	 top: calc(-1 * var(--border-width));<br>
+	 left: calc(-1 * var(--border-width));<br>
+	 z-index: -1;<br>
+	 width: calc(100% + var(--border-width) * 2);<br>
+	 height: calc(100% + var(--border-width) * 2);<br>
+	 background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);<br>
+	 background-size: 300% 300%;<br>
+	 background-position: 0 50%;<br>
+	 border-radius: calc(2 * var(--border-width));<br>
+	 animation: moveGradient 4s alternate infinite;<br>
+}<br><br>
+ @keyframes moveGradient {<br>
+	 50% {<br>
+		 background-position: 100% 50%;<br>
+	}<br>
+}<br>
+                </code>
             </div>
         </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
+                        <p>Email - rayan2008bg@gmail.com</p>
+                        <hr>
+                        <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
+                        <p class="copyright">© Copyright 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -153,23 +153,124 @@
               </filter>
             </svg>
             <br><br><br><br><br><br><br>
-            <div class="footer-clean">
-              <footer>
-                  <div class="container">
-                      <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                          <div class="col-lg-3 item social">
-                              <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
-                              <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
-                              <p>Email - rayan2008bg@gmail.com</p>
-                              <hr>
-                              <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
-                              <p class="copyright">© Copyright 2022</p>
-                          </div>
-                      </div>
-                  </div>
-              </footer>
+            <h2>HTML</h2>
+            <div class="code-show">
+              <div class="push">
+                <button onclick="Copy3()" class="copy-btn"><i class="fas fa-copy"></i></button>
+              </div>
+              <code>
+                &#60;div class="dropdown"><br>
+                &#60;input type="checkbox" id="dropdown"><br>
+                
+                &#60;label class="dropdown__face" for="dropdown"><br>
+                &#60;div class="dropdown__text">Dropdown&#60;/div><br>
+                
+                &#60;div class="dropdown__arrow">&#60;/div><br>
+                &#60;/label><br>
+                
+                &#60;ul class="dropdown__items"><br>
+                &#60;li>🙂&#60;/li><br>
+                &#60;li>😺&#60;/li><br>
+                &#60;li>😽&#60;/li><br>
+                &#60;li>😎&#60;/li><br>
+                &#60;li>🤗&#60;/li><br>
+                &#60;/ul><br>
+                &#60;/div><br>
+                
+                &#60;svg><br>
+                &#60;filter id="goo"><br>
+                &#60;feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" /><br>
+                &#60;feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" /><br>
+                &#60;feBlend in="SourceGraphic" in2="goo" /><br>
+                &#60;/filter><br>
+                &#60;/svg><br>
+              </code>
+            </div><br>
+            <h2>CSS</h2>
+            <div class="code-show">
+              <div class="push">
+                <button onclick="Copy4()" class="copy-btn"><i class="fas fa-copy"></i></button>
+              </div>
+              <code>
+                .dropdown {<br>
+                  position: relative;<br>
+                  width: 230px;<br>
+                  filter: url(#goo);<br>
+               }<br><br>
+                .dropdown__face, .dropdown__items {<br>
+                  background-color: #fff;<br>
+                  padding: 20px;<br>
+                  border-radius: 25px;<br>
+               }<br><br>
+                .dropdown__face {<br>
+                  display: block;<br>
+                  position: relative;<br>
+               }<br><br>
+                .dropdown__items {<br>
+                  margin: 0;<br>
+                  position: absolute;<br>
+                  right: 0;<br>
+                  top: 50%;<br>
+                  width: 100%;<br>
+                  list-style: none;<br>
+                  list-style-type: none;<br>
+                  display: flex;<br>
+                  justify-content: space-between;<br>
+                  visibility: hidden;<br>
+                  z-index: -1;<br>
+                  opacity: 0;<br>
+                  transition: all 0.4s cubic-bezier(0.93, 0.88, 0.1, 0.8);<br>
+               }<br><br>
+                .dropdown__items::before {<br>
+                  content: "";<br>
+                  background-color: #fff;<br>
+                  position: absolute;<br>
+                  bottom: 100%;<br>
+                  right: 20%;<br>
+                  height: 40px;<br>
+                  width: 20px;<br>
+               }<br><br>
+                .dropdown__arrow {<br>
+                  border-bottom: 2px solid #000;<br>
+                  border-right: 2px solid #000;<br>
+                  position: absolute;<br>
+                  top: 50%;<br>
+                  right: 30px;<br>
+                  width: 10px;<br>
+                  height: 10px;<br>
+                  transform: rotate(45deg) translateY(-50%);<br>
+                  transform-origin: right;<br>
+               }<br><br>
+                .dropdown input {<br>
+                  display: none;<br>
+               }<br><br>
+                .dropdown input:checked ~ .dropdown__items {<br>
+                  top: calc(100% + 25px);<br>
+                  visibility: visible;<br>
+                  opacity: 1;<br>
+               }<br><br>
+                svg {<br>
+                  display: none;<br>
+               }<br>
+              </code>
+            </div><br>
           </div>
         </div>
-    </div>
+        <div class="footer-clean">
+          <footer>
+              <div class="container">
+                  <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                      <div class="col-lg-3 item social">
+                          <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
+                          <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
+                          <p>Email - rayan2008bg@gmail.com</p>
+                          <hr>
+                          <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
+                          <p class="copyright">© Copyright 2022</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+      </div>
 </body>
 </html>

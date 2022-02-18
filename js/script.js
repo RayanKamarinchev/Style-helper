@@ -282,3 +282,17 @@ function Copy3() {
     const textCopy= document.getElementsByClassName("code-show")[2].innerText;
     navigator.clipboard.writeText(textCopy);
 }
+function Copy4() {
+    const textCopy= document.getElementsByClassName("code-show")[3].innerText;
+    navigator.clipboard.writeText(textCopy);
+}
+function dumpCSSText(element){
+    var s = '';
+    var o = getComputedStyle(document.getElementsByClassName("system")[0]);
+    for(var i = 0; i < o.length; i++){
+        if (o.getPropertyValue(o[i])!="initial") {
+            s+=o[i] + ':' + o.getPropertyValue(o[i])+';';
+        }
+    }
+    console.log(s)
+  }

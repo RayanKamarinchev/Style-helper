@@ -115,23 +115,72 @@
             <h2>Напреднал пример</h2>
             <h4>Hello World!</h4>
             <br>
-            <div class="footer-clean">
-              <footer>
-                  <div class="container">
-                      <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                          <div class="col-lg-3 item social">
-                              <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
-                              <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
-                              <p>Email - rayan2008bg@gmail.com</p>
-                              <hr>
-                              <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
-                              <p class="copyright">© Copyright 2022</p>
-                          </div>
-                      </div>
-                  </div>
-              </footer>
+            <div class="code-show">
+              <div class="push">
+                <button onclick="Copy2()" class="copy-btn"><i class="fas fa-copy"></i></button><br>
+              	</div>
+                <code>
+                  h4 {<br>
+                    font-size: 70px;<br>
+                    font-weight: 900;<br>
+                    color: #0094aa;<br>
+                    
+                    --x-offset: -0.0625em;<br>
+                    --y-offset: 0.0625em;<br>
+                    --stroke: 0.025em;<br>
+                    --background-color: white;<br>
+                    --stroke-color: lightblue;<br>
+                    
+                    text-shadow: <br>
+                      
+                      var(--x-offset)<br>
+                      var(--y-offset)<br>
+                      0px<br>
+                      var(--background-color), <br>
+                      
+                      calc( var(--x-offset) - var(--stroke) )<br>
+                      calc( var(--y-offset) + var(--stroke) )<br>
+                      0px<br>
+                      var(--stroke-color);<br>
+                    
+                  }<br><br>
+                  @supports ( text-shadow: 1px 1px 1px 1px black ) {<br>
+                    h4 {<br>
+                      text-shadow:<br>
+                        
+                        var(--x-offset)<br>
+                        var(--y-offset)<br>
+                        0px<br>
+                        0px<br>
+                        var(--background-color), <br>
+                        
+                        var(--x-offset) <br>
+                        var(--y-offset)<br>
+                        var(--stroke)<br>
+                        0px<br>
+                        var(--stroke-color);<br>
+                    }<br>
+                  }<br>
+                </code>
+            </div>
+            <br>
           </div>
         </div>
-    </div>
+        <div class="footer-clean">
+          <footer>
+              <div class="container">
+                  <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                      <div class="col-lg-3 item social">
+                          <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
+                          <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
+                          <p>Email - rayan2008bg@gmail.com</p>
+                          <hr>
+                          <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
+                          <p class="copyright">© Copyright 2022</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+      </div>
 </body>
 </html>

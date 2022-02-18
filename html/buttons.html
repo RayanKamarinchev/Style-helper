@@ -216,24 +216,80 @@
             <hr>
             <h2>Напреднал пример</h2>
             <br><br><br>
-            <button class="button">Press me!</button>
-            <div class="footer-clean">
-                <footer>
-                    <div class="container">
-                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                            <div class="col-lg-3 item social">
-                                <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
-                                <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
-                                <p>Email - rayan2008bg@gmail.com</p>
-                                <hr>
-                                <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
-                                <p class="copyright">© Copyright 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+            <button class="button">Press me!</button><br>
+            <div class="code-show">
+                <div class="push">
+                    <button onclick="Copy4()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                </div>
+                <code>
+                    @import 'https://fonts.googleapis.com/css?family=Rubik+One';<br>
+ .button::before, .button::after {<br>
+	 position: absolute;<br>
+	 content: '';<br>
+	 transition: all 0.5s;<br>
+}<br><br>
+ .button {<br>
+    border: none;<br>
+	 display: inline-block;<br>
+	 padding: 20px 40px;<br>
+	 color: white;<br>
+	 transform: translate(-50%, -50%);<br>
+	 vertical-align: middle;<br>
+	 font-family: 'Rubik One', sans-serif;<br>
+	 text-decoration: none;<br>
+	 font-size: 4vw;<br>
+	 transition: all 0.5s;<br>
+	 background-color: #3498db;<br>
+}<br><br>
+ .button::before {<br>
+	 bottom: -15px;<br>
+	 height: 15px;<br>
+	 width: 100%;<br>
+	 left: 8px;<br>
+	 transform: skewX(45deg);<br>
+	 background-color: #196090;<br>
+}<br><br>
+ .button::after {<br>
+	 right: -15px;<br>
+	 height: 100%;<br>
+	 width: 15px;<br>
+	 bottom: -8px;<br>
+	 transform: skewY(45deg);<br>
+	 background-color: #124364;<br>
+}<br><br>
+ .button:active {<br>
+	 margin-left: 10px;<br>
+	 margin-top: 10px;<br>
+}<br><br>
+ .button:active::before {<br>
+	 bottom: -5px;<br>
+	 height: 5px;<br>
+	 left: 3px;<br>
+}<br>
+ .button:active::after {<br>
+	 right: -5px;<br>
+	 width: 5px;<br>
+	 bottom: -3px;<br>
+}<br>
+                </code>
             </div>
         </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
+                        <p>Email - rayan2008bg@gmail.com</p>
+                        <hr>
+                        <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
+                        <p class="copyright">© Copyright 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

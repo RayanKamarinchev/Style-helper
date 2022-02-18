@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/backgrounds.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
     <script src="../js/backgrounds.js"></script>
+    <script src="../js/script.js"></script>
     <link rel="shortcut icon" href="../pics/icons8-drawing-48.png"/>
 </head>
 <body>
@@ -89,23 +90,62 @@
             <div class="bg"></div>
             <div class="bg bg2"></div>
             <div class="bg bg3"></div>
-            <div class="footer-clean">
-                <footer>
-                    <div class="container">
-                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                            <div class="col-lg-3 item social">
-                                <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
-                                <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
-                                <p>Email - rayan2008bg@gmail.com</p>
-                                <hr>
-                                <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
-                                <p class="copyright">© Copyright 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+            <div class="code-show">
+                <div class="push">
+                    <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                </div>
+                <code>
+                    .bg {<br>
+                        animation:slide 3s ease-in-out infinite alternate;<br>
+                        background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);<br>
+                        bottom:0;<br>
+                        left:-50%;<br>
+                        opacity:.5;<br>
+                        position:fixed;<br>
+                        right:-50%;<br>
+                        top:0;<br>
+                        z-index:-1;<br>
+                      }<br>
+                      <br>
+                      .bg2 {<br>
+                        animation-direction:alternate-reverse;<br>
+                        animation-duration:4s;<br>
+                      }<br>
+                      <br>
+                      .bg3 {<br>
+                        animation-duration:5s;<br>
+                      }<br>
+                      @keyframes slide {<br>
+                        0% {<br>
+                          transform:translateX(-25%);<br>
+                        }<br>
+                        100% {<br>
+                          transform:translateX(25%);<br>
+                        }<br>
+                      }<br>
+                      <br>
+                      .image-box{<br>
+                          background-color: rgb(128, 128, 128);<br>
+                      }<br>
+                </code>
             </div>
         </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
+                        <p>Email - rayan2008bg@gmail.com</p>
+                        <hr>
+                        <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
+                        <p class="copyright">© Copyright 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

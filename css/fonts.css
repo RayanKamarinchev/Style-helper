@@ -31,10 +31,6 @@
 }
 
 .text {
-  position: absolute;
-  top: 260%; 
-  right: 40%;
-  transform: translate(50%,-50%);
   text-transform: uppercase;
   font-family: verdana;
   font-size: 12em;

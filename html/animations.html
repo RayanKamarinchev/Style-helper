@@ -10,6 +10,12 @@
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
     <link rel="shortcut icon" href="../pics/icons8-drawing-48.png"/>
+    <script>
+        function Advanced() {
+            textCopy=""
+        navigator.clipboard.writeText(textCopy);
+}
+    </script>
 </head>
 <body>
     <div class="layout">
@@ -47,9 +53,6 @@
             <div class="example">
                 <div id="animation1" class="animation"></div>
                 <div class="code-show">
-                    <div class="push">
-                        <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
-                    </div>
                     <code>
                         <small class="class">#animation1</small>{<br>
                             <small class="prop">width</small>: 200px;<br>
@@ -114,7 +117,9 @@
                 <div id="curve-animation4" class="animation3">ease</div>
                 <div id="curve-animation5" class="animation3">linear</div>
             </div>
-            <hr>
+            <!-- <hr><div class="push">
+                <button onclick="dumpCSSText()" class="copy-btn"><i class="fas fa-copy"></i>ewcrv</button>
+            </div> -->
             <h2>Напреднал пример</h2>
             <div class="system">
                 <div class="system__orbit system__orbit--sun">
@@ -166,24 +171,149 @@
                         <img src="https://www.dropbox.com/s/z7axkafhs887t9b/pluto.png?raw=1" alt="Pluto">
                     </div>
                 </div>
-            </div>
-            <div class="footer-clean">
-                <footer>
-                    <div class="container">
-                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                            <div class="col-lg-3 item social">
-                                <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
-                                <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
-                                <p>Email - rayan2008bg@gmail.com</p>
-                                <hr>
-                                <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
-                                <p class="copyright">© Copyright 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+            </div><br>
+            <div class="code-show">
+                <div class="push">
+                    <button onclick="Copy3()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                </div>
+                <code>
+                    .system { <br>
+                        background-color: #251C2D;<br>
+                        position: relative;<br>
+                        width: 100%;<br>
+                        max-width: 700px;<br>
+                        padding-top: 100%;<br>
+                    }<br><br>
+                    @media (min-width: 700px) {<br>
+                        .system {<br>
+                            padding-top: 700px;<br>
+                       }<br>
+                    }<br><br>
+                    .system__sun {<br>
+                        position: absolute;<br>
+                        top: 50%;<br>
+                        left: 50%;<br>
+                        transform: translate(-50%, -50%);<br>
+                    }<br><br>
+                    .system__orbit {<br>
+                        position: absolute;<br>
+                        top: 50%;<br>
+                        left: 50%;<br>
+                        border: 1px solid rgba(255, 255, 255, .3);<br>
+                        border-radius: 100%;<br>
+                        transform: translate(-50%, -50%);<br>
+                        animation: spin infinite linear both;<br>
+                    }<br><br>
+                    .system__orbit:nth-child(1) {<br>
+                        width: calc(10%);<br>
+                        height: calc(10%);<br>
+                    }<br>
+                    .system__orbit:nth-child(2) {<br>
+                        width: calc(20%);<br>
+                        height: calc(20%);<br>
+                    }<br>
+                    .system__orbit:nth-child(3) {<br>
+                        width: calc(30%);<br>
+                        height: calc(30%);<br>
+                    }<br>
+                    .system__orbit:nth-child(4) {<br>
+                        width: calc(40%);<br>
+                        height: calc(40%);<br>
+                    }<br>
+                    .system__orbit:nth-child(5) {<br>
+                        width: calc(50%);<br>
+                        height: calc(50%);<br>
+                    }<br>
+                    .system__orbit:nth-child(6) {<br>
+                        width: calc(60%);<br>
+                        height: calc(60%);<br>
+                    }<br>
+                    .system__orbit:nth-child(7) {<br>
+                        width: calc(70%);<br>
+                        height: calc(70%);<br>
+                    }<br>
+                    .system__orbit:nth-child(8) {<br>
+                        width: calc(80%);<br>
+                        height: calc(80%);<br>
+                    }<br>
+                    .system__orbit:nth-child(9) {<br>
+                        width: calc(90%);<br>
+                        height: calc(90%);<br>
+                    }<br>
+                    .system__orbit:nth-child(10) {<br>
+                        width: calc(100%);<br>
+                        height: calc(100%);<br>
+                    }<br><br>
+                    .system__orbit--sun {<br>
+                        border: none;<br>
+                    }<br>
+                    .system__orbit--mercury {<br>
+                        animation-duration: 1s;<br>
+                    }<br>
+                    .system__orbit--venus {<br>
+                        animation-duration: 2.6s;<br>
+                    }<br>
+                    .system__orbit--earth {<br>
+                        animation-duration: 4.1s;<br>
+                    }<br>
+                    .system__orbit--mars {<br>
+                        animation-duration: 7.8s;<br>
+                    }<br>
+                    .system__orbit--jupiter {<br>
+                        animation-duration: 49.8s;<br>
+                    }<br>
+                    .system__orbit--saturn {<br>
+                        animation-duration: 120.3s;<br>
+                    }<br>
+                    .system__orbit--uranus {<br>
+                        animation-duration: 348.4s;<br>
+                    }<br>
+                    .system__orbit--neptune {<br>
+                        animation-duration: 684.4s;<br>
+                    }<br>
+                    .system__orbit--pluto {<br>
+                        animation-duration: 1028.6s;<br>
+                    }<br><br>
+                    .system__planet {<br>
+                        position: absolute;<br>
+                        top: 50%;<br>
+                        left: -12px;<br>
+                        width: 25px;<br>
+                        height: 25px;<br>
+                        border-radius: 100%;<br>
+                        transform: translateY(-50%);<br>
+                    }<br><br>
+                    .system__icon {<br>
+                        width: 100%;<br>
+                        height: 100%;<br>
+                    }<br><br>
+                    @keyframes spin {<br>
+                        from {<br>
+                            transform: translate(-50%, -50%);<br>
+                       }<br>
+                        to {<br>
+                            transform: translate(-50%, -50%) rotate(-360deg);<br>
+                       }<br>
+                    }<br>
+                </code>
+            </div><br>
         </div>
+    </div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/profile.php?id=100077942102799"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/RayanKamarinchev"><i class="fab fa-github"></i></a>
+                        <p><br>Email: <a style="text-decoration: none;" href="mailto:rayan2008@gmail.com">rayan2008bg@gmail.com</a></p>
+                        <hr>
+                        <p>Всички права запазени. Строго забранено е копиране, изтегляне и публикуване на каквито и да е материали от уебсайта, без предварително писмено съгласие от автора.</p>
+                        <p class="copyright">© Copyright 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
