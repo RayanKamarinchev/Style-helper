@@ -19,8 +19,8 @@
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#object{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
-    var style = document.createElement('style');
+    let css = `#object{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
+    let style = document.createElement('style');
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
     } else {
@@ -82,8 +82,8 @@ function pad(n) {
         redNum.innerText = `Red: ${red.value}`
         greenNum.innerText = `Green: ${green.value}`
         blueNum.innerText = `Blue: ${blue.value}`
-        var css = `#object{ border-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
-        var style = document.createElement('style');
+        let css = `#object{ border-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
+        let style = document.createElement('style');
         if (style.styleSheet) {
             style.styleSheet.cssText = css;
         } else {
@@ -94,8 +94,8 @@ function pad(n) {
     
     function OnBorderSelect() {
         const selection = document.getElementById("selection");
-        var css = `#object{ border-style: ${selection.value}}`;
-        var style = document.createElement('style');
+        let css = `#object{ border-style: ${selection.value}}`;
+        let style = document.createElement('style');
         if (style.styleSheet) {
             style.styleSheet.cssText = css;
         } else {
@@ -106,8 +106,8 @@ function pad(n) {
 
 function OnBorderWidthInput() {
     const input = document.getElementById("width-input");
-    var css = `#object{ border-width: ${input.value}px}`;
-        var style = document.createElement('style');
+    let css = `#object{ border-width: ${input.value}px}`;
+        let style = document.createElement('style');
         if (style.styleSheet) {
             style.styleSheet.cssText = css;
         } else {
@@ -118,8 +118,8 @@ function OnBorderWidthInput() {
 
 function OnBorderRadiusInput() {
     const input = document.getElementById("radius-input");
-    var css = `#object{ border-radius: ${input.value}px}`;
-        var style = document.createElement('style');
+    let css = `#object{ border-radius: ${input.value}px}`;
+        let style = document.createElement('style');
         if (style.styleSheet) {
             style.styleSheet.cssText = css;
         } else {
@@ -150,8 +150,8 @@ function OnHoverColor() {
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
     console.log(decToHexa(red.value))
-    var css = `#object:hover{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
-    var style = document.createElement('style');
+    let css = `#object:hover{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
+    let style = document.createElement('style');
     
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
@@ -166,8 +166,8 @@ function OnHoverColor() {
                 <input onchange="OnHoverOpacity()" type="number" class="custom-input" id="opcity-hover-input"> <br><br></br> */
 function OnHoverOpacity() {
     const input = document.getElementById("opcity-hover-input").value;
-    var css = `#object:hover{ opacity: ${input}}`;
-    var style = document.createElement('style');
+    let css = `#object:hover{ opacity: ${input}}`;
+    let style = document.createElement('style');
     
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
@@ -180,8 +180,8 @@ function OnHoverOpacity() {
 
 function OnActiveOpacity() {
     const input = document.getElementById("opcity-active-input").value;
-    var css = `#object:active{ opacity: ${input}}`;
-    var style = document.createElement('style');
+    let css = `#object:active{ opacity: ${input}}`;
+    let style = document.createElement('style');
     
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
@@ -287,9 +287,9 @@ function Copy4() {
     navigator.clipboard.writeText(textCopy);
 }
 function dumpCSSText(element){
-    var s = '';
-    var o = getComputedStyle(document.getElementsByClassName("system")[0]);
-    for(var i = 0; i < o.length; i++){
+    let s = '';
+    let o = getComputedStyle(document.getElementsByClassName("system")[0]);
+    for(let i = 0; i < o.length; i++){
         if (o.getPropertyValue(o[i])!="initial") {
             s+=o[i] + ':' + o.getPropertyValue(o[i])+';';
         }

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/backgrounds.css">
     <script src="https://kit.fontawesome.com/fb50c1ccf1.js" crossorigin="anonymous"></script>
-    <script src="../js/backgrounds.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/backgrounds.js"></script>
     <link rel="shortcut icon" href="../pics/icons8-drawing-48.png"/>
 </head>
 <body>
@@ -49,21 +49,18 @@
             <h2>Editable background</h2>
             <div class="advanced-background">
                 <div class="color-picker">
-                    <label for="red">Red (0 to 255)</label>
-                    <input onchange="OnColorPick()" type="range" id="red" name="red" min="0" max="255"> <p id="red-value">Red: 128</p>
-                    <label for="green">Red (0 to 255)</label>
-                    <input onchange="OnColorPick()" type="range" id="green" name="green" min="0" max="255"> <p id="green-value">Green: 128</p>
-                    <label for="blue">Red (0 to 255)</label>
-                    <input onchange="OnColorPick()" type="range" id="blue" name="blue" min="0" max="255"> <p id="blue-value">Blue: 128</p>
+                    <p id="red-value">Red: 128</p><input onchange="OnColorPick()" type="range" id="red" name="red" min="0" max="255">
+                    <p id="green-value">Green: 128</p><input onchange="OnColorPick()" type="range" id="green" name="green" min="0" max="255"> 
+                    <p id="blue-value">Blue: 128</p><input onchange="OnColorPick()" type="range" id="blue" name="blue" min="0" max="255"> 
                 </div>
               </div>
               <p id="color-display">Color code: #808080</p>
-              <div class="image-box">
+              <div class="image-box" style="margin-left: 0;">
               </div>
             <hr>
             <h2>Example</h2>
             <div id=background-example>
-                <div id="green-background"><p>background-color: green</p></div>
+                <div id="green-background"><p>background-color: green</p></div><br>
                 <div id="blue-background"><p>background-color: #0094AA</p></div>
             </div>
             <hr>
@@ -87,9 +84,6 @@
             <div id="background-image">
                <p style="color: #fbf5f3;">Това е текст</p> 
             </div>
-            <div class="bg"></div>
-            <div class="bg bg2"></div>
-            <div class="bg bg3"></div><br>
             <div class="code-show">
                 <div class="push">
                     <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>

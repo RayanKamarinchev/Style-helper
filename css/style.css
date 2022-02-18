@@ -449,3 +449,9 @@ input[type=text], input[type=number]{
   font-size:13px;
   opacity:0.6;
 }
+
+.color-picker{
+  width: 200px;
+  display: flex;
+  flex-flow: column;
+}

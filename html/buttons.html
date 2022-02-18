@@ -127,12 +127,9 @@
                     <button class="accordion" onclick="OnClick1()">On Hover</button>
                     <div class="panel" id="pannel">
                         <div class="color-picker">
-                            <label for="red">Red (0 to 255)</label>
-                            <input onchange="OnHoverColor()" type="range" id="hover-red" name="red" min="0" max="255" value="0"> <p id="red-hover-value">Red: 0</p>
-                            <label for="green">Green (0 to 255)</label>
-                            <input onchange="OnHoverColor()" type="range" id="hover-green" name="green" min="0" max="255" value="148"> <p id="green-hover-value">Green: 148</p>
-                            <label for="blue">Blue (0 to 255)</label>
-                            <input onchange="OnHoverColor()" type="range" id="hover-blue" name="blue" min="0" max="255" value="170"> <p id="blue-hover-value">Blue: 170</p>
+                            <p id="red-hover-value">Red: 0</p><input onchange="OnHoverColor()" type="range" id="hover-red" name="red" min="0" max="255" value="0"> 
+                            <p id="green-hover-value">Green: 148</p><input onchange="OnHoverColor()" type="range" id="hover-green" name="green" min="0" max="255" value="148"> 
+                            <p id="blue-hover-value">Blue: 170</p><input onchange="OnHoverColor()" type="range" id="hover-blue" name="blue" min="0" max="255" value="170"> 
                         </div>
                         <label for="input"><small class="class">opacity</small>: </label>
                         <input onchange="OnHoverOpacity()" type="number" class="custom-input" id="opcity-hover-input"> <br><br>  
@@ -162,24 +159,18 @@
                         <label for="input"><small class="class">border-radius</small>: </label>
                         <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
                         <div class="color-picker">
-                            <label for="red">Red (0 to 255)</label>
-                            <input onchange="OnBorderColorPick()" type="range" id="border-red" name="red" min="0" max="255" value="128"> <p id="red-border-value">Red: 128</p>
-                            <label for="green">Green (0 to 255)</label>
-                            <input onchange="OnBorderColorPick()" type="range" id="border-green" name="green" min="0" max="255" value="128"> <p id="green-border-value">Green: 128</p>
-                            <label for="blue">Blue (0 to 255)</label>
-                            <input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255" value="128"> <p id="blue-border-value">Blue: 128</p>
+                            <p id="red-border-value">Red: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-red" name="red" min="0" max="255" value="128"> 
+                            <p id="green-border-value">Green: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-green" name="green" min="0" max="255" value="128"> 
+                            <p id="blue-border-value">Blue: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255" value="128"> 
                         </div>
                     </div>
                     <br>
                     <button class="accordion" onclick="OnClick4()">Color</button>
                     <div class="panel">
                         <div class="color-picker">
-                            <label for="red">Red (0 to 255)</label>
-                            <input onchange="OnColorPick()" type="range" id="red-color" name="red" min="0" max="255" value="0"> <p id="red-value">Red: 0</p>
-                            <label for="green">Red (0 to 255)</label>
-                            <input onchange="OnColorPick()" type="range" id="green-color" name="green" min="0" max="255" value="148"> <p id="green-value">Green: 148</p>
-                            <label for="blue">Red (0 to 255)</label>
-                            <input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255" value="170"> <p id="blue-value">Blue: 170</p>
+                            <p id="red-value">Red: 0</p><input onchange="OnColorPick()" type="range" id="red-color" name="red" min="0" max="255" value="0"> 
+                            <p id="green-value">Green: 148</p><input onchange="OnColorPick()" type="range" id="green-color" name="green" min="0" max="255" value="148"> 
+                            <p id="blue-value">Blue: 170</p><input onchange="OnColorPick()" type="range" id="blue-color" name="blue" min="0" max="255" value="170"> 
                         </div> 
                     </div><br>
                     <button class="accordion" onclick="OnClick5()">Font</button>
