@@ -197,17 +197,41 @@
                             <input value="20" onchange="OnFontSizeChange()" type="number" class="custom-input" id="font-size-selection"> <br><br>   
                     </div>
                 </div>
-                <div class="image-box">
+                    <div class="image-box">
                     <div id="object" class="object"><p class="centered">Click Me!</p></div>
-                </div>
+                    </div>
+                    <div class="code-show">
+                        <code>
+                            <small class="class">.object:hover</small>{<br>
+                                <small class="prop">bckground-color</small>: <span id="hover-color-prop">#0094aa</span><br>
+                                <small class="prop">opacity</small>: <span id="hover-opacity-prop">1</span><br>
+                            }
+                            <small class="class">.object:active</small>{<br>
+                                <small class="prop">opacity</small>: <span id="focus-opacity-prop">1</span><br>
+                            }
+                            <small class="class">.object</small>{<br>
+                                <small class="prop">border-style</small>: <span id="border-style-prop">solid</span><br>
+                                <small class="prop">border-width</small>: <span id="border-width-prop">0</span><br>
+                                <small class="prop">border-radius</small>: <span id="border-radius-prop">0</span><br>
+                                <small class="prop">border-color</small>: <span id="border-color-prop">#808080</span><br>
+                                <small class="prop">background-color</small>: <span id="color-prop">#0094aa</span><br>
+                            }
+                            <small class="class">.text</small>{<br>
+                                <small class="prop">font-familly</small>: <span id="font-familly-prop">sans-serif</span><br>
+                                <small class="prop">font-style</small>: <span id="font-style-prop">normal</span><br>
+                                <small class="prop">font-weight</small>: <span id="font-weight-prop">normal</span><br>
+                                <small class="prop">font-size</small>: <span id="font-size-prop">20</span><br>
+                            }
+                        </code>
+                    </div>
+                
             </div>
-            <p id="color-hover-display">Color code on hover: #808080</p>
-            <p id="color-display">Color code: #0094aa</p>
-            <p id="color-border-display">Border color code: #808080</p>
             <hr>
             <h2>Напреднал пример</h2>
             <br><br><br>
-            <button class="button">Press me!</button><br>
+            <div style="height: 100px;">
+                <button style="margin-left: 250px;" class="button">Press me!</button><br>
+            </div>
             <div class="code-show">
                 <div class="push">
                     <button onclick="Copy4()" class="copy-btn"><i class="fas fa-copy"></i></button>

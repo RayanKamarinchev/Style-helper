@@ -6,7 +6,6 @@ function OnBorderColorPick() {
     const greenNum = document.getElementById("green-border-value");
     const blueNum = document.getElementById("blue-border-value");
     const colorDisplayer = document.getElementById("color-border-display");
-    const chnageable = document.getElementById("put");
     colorDisplayer.innerText=`Border color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`

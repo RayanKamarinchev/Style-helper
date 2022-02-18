@@ -15,6 +15,8 @@
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
     const colorDisplayer = document.getElementById("color-display");
+    const code = document.getElementById("color-prop");
+    code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`;
     colorDisplayer.innerText=`Color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
@@ -77,8 +79,6 @@ function pad(n) {
         const redNum = document.getElementById("red-border-value");
         const greenNum = document.getElementById("green-border-value");
         const blueNum = document.getElementById("blue-border-value");
-        const colorDisplayer = document.getElementById("color-border-display");
-        colorDisplayer.innerText=`Border color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
         redNum.innerText = `Red: ${red.value}`
         greenNum.innerText = `Green: ${green.value}`
         blueNum.innerText = `Blue: ${blue.value}`
@@ -90,10 +90,14 @@ function pad(n) {
             style.appendChild(document.createTextNode(css));
         }
         document.getElementsByTagName('head')[0].appendChild(style); 
+        const code = document.getElementById("border-color-prop");
+        code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`;
     }
     
     function OnBorderSelect() {
         const selection = document.getElementById("selection");
+        const code = document.getElementById("border-style-prop");
+        code.innerText = selection.value;
         let css = `#object{ border-style: ${selection.value}}`;
         let style = document.createElement('style');
         if (style.styleSheet) {
@@ -106,6 +110,8 @@ function pad(n) {
 
 function OnBorderWidthInput() {
     const input = document.getElementById("width-input");
+    const code = document.getElementById("border-width-prop");
+    code.innerText = input.value;
     let css = `#object{ border-width: ${input.value}px}`;
         let style = document.createElement('style');
         if (style.styleSheet) {
@@ -118,6 +124,8 @@ function OnBorderWidthInput() {
 
 function OnBorderRadiusInput() {
     const input = document.getElementById("radius-input");
+    const code = document.getElementById("border-radius-prop");
+    code.innerText = input.value;
     let css = `#object{ border-radius: ${input.value}px}`;
         let style = document.createElement('style');
         if (style.styleSheet) {
@@ -145,6 +153,8 @@ function OnHoverColor() {
     const greenNum = document.getElementById("green-hover-value");
     const blueNum = document.getElementById("blue-hover-value");
     const colorDisplayer = document.getElementById("color-hover-display");
+    const code = document.getElementById("hover-color-prop");
+    code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     colorDisplayer.innerText=`Color code on hover: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
@@ -166,9 +176,10 @@ function OnHoverColor() {
                 <input onchange="OnHoverOpacity()" type="number" class="custom-input" id="opcity-hover-input"> <br><br></br> */
 function OnHoverOpacity() {
     const input = document.getElementById("opcity-hover-input").value;
+    const code = document.getElementById("hover-opacity-prop");
+    code.innerText = input;
     let css = `#object:hover{ opacity: ${input}}`;
     let style = document.createElement('style');
-    
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
     } else {
@@ -182,7 +193,8 @@ function OnActiveOpacity() {
     const input = document.getElementById("opcity-active-input").value;
     let css = `#object:active{ opacity: ${input}}`;
     let style = document.createElement('style');
-    
+    const code = document.getElementById("focus-opacity-prop");
+    code.innerText = input;
     if (style.styleSheet) {
     style.styleSheet.cssText = css;
     } else {
@@ -225,24 +237,32 @@ function OnFontFamillyChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("family-selection")
     editable.style.fontFamily = `${selection.value}`
+    const code = document.getElementById("font-familly-prop");
+    code.innerText = selection.value;
 }
 
 function OnFontStyleChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("style-selection")
     editable.style.fontStyle = `${selection.value}`
+    const code = document.getElementById("font-style-prop");
+    code.innerText = selection.value;
 }
 
 function OnFontWeidhtChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("weight-selection")
     editable.style.fontWeight = `${selection.value}`
+    const code = document.getElementById("font-weight-prop");
+    code.innerText = selection.value;
 }
 
 function OnFontSizeChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("font-size-selection")
     editable.style.fontSize = `${selection.value}px`
+    const code = document.getElementById("font-size-prop");
+    code.innerText = selection.value;
 }
 
 {/* <label for="input"><small class="class">horizontal shadow</small>: </label>

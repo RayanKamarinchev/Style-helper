@@ -6,12 +6,12 @@ function OnColorPick() {
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
     const imageElement = document.getElementsByClassName("image-box")[0];
-    const colorDisplayer = document.getElementById("color-display");
-    colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("background-prop");
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
     imageElement.style.backgroundColor =`rgb(${red.value}, ${green.value}, ${blue.value})` 
+    code.innerText = `#${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
 }
 
 function decToHexa(n)
