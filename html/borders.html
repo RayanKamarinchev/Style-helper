@@ -89,6 +89,9 @@
                     </div>
                 </div>
                 <div class="code-show">
+                    <div class="push">
+                        <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                    </div>
                     <code>
                         <small class="class">.object</small>{<br>
                             <small class="prop">border-style</small>: <span id="border-style-prop">solid</span><br>
@@ -116,10 +119,9 @@
             <div class="gradient-border">css<br />is<br />awesome</div><br><br><br>
             <div class="code-show">
                 <div class="push">
-                    <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                    <button onclick="Copy2()" class="copy-btn"><i class="fas fa-copy"></i></button>
                 </div>
                 <code>
-                    @import url("https://fonts.googleapis.com/css?family=Lato:300");<br>
  .gradient-border {<br>
 	 --border-width: 3px;<br>
 	 position: relative;<br>
@@ -143,7 +145,7 @@
 	 z-index: -1;<br>
 	 width: calc(100% + var(--border-width) * 2);<br>
 	 height: calc(100% + var(--border-width) * 2);<br>
-	 background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);<br>
+	 background: linear-gradient(60deg,<br> #5f86f2,<br> #a65ff2,<br> #f25fd0,<br> #f25f61,<br> #f2cb5f,<br> #abf25f,<br> #5ff281,<br> #5ff2f0);<br>
 	 background-size: 300% 300%;<br>
 	 background-position: 0 50%;<br>
 	 border-radius: calc(2 * var(--border-width));<br>

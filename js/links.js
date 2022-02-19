@@ -5,12 +5,12 @@ function OnLinkColorPick() {
     const redNum = document.getElementById("red-value");
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
-    const colorDisplayer = document.getElementById("color-display");
-    colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("color-prop");
+    code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `.centered{ color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `.centered{ color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {
@@ -29,12 +29,12 @@ function OnLinkHoverColor() {
     const redNum = document.getElementById("red-hover-value");
     const greenNum = document.getElementById("green-hover-value");
     const blueNum = document.getElementById("blue-hover-value");
-    const colorDisplayer = document.getElementById("color-hover-display");
-    colorDisplayer.innerText=`Color code on hover: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("color-hover-prop");
+    code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `.centered:hover{ color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `.centered:hover{ color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {
@@ -53,12 +53,12 @@ function OnActive() {
     const redNum = document.getElementById("red-active-value");
     const greenNum = document.getElementById("green-active-value");
     const blueNum = document.getElementById("blue-active-value");
-    const colorDisplayer = document.getElementById("color-active-display");
-    colorDisplayer.innerText=`Color code on active: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("color-active-prop");
+    code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `.centered:active{ color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `.centered:active{ color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {

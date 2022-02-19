@@ -5,12 +5,12 @@ function OnBorderColorPick() {
     const redNum = document.getElementById("red-border-value");
     const greenNum = document.getElementById("green-border-value");
     const blueNum = document.getElementById("blue-border-value");
-    const colorDisplayer = document.getElementById("color-border-display");
-    colorDisplayer.innerText=`Border color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("border-color-prop")
+    code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#put{ border-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `#put{ border-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {
@@ -24,42 +24,56 @@ function OnBorderColorPick() {
 function OnBorderSelect() {
     const chnageable = document.getElementById("put");
     const selection = document.getElementById("selection");
-chnageable.style.borderStyle = `${selection.value}`;
+    const code = document.getElementById("border-style-prop")
+    code.innerText =  selection.value;
+    chnageable.style.borderStyle = `${selection.value}`;
 }
 
 function OnBorderWidthInput() {
 const chnageable = document.getElementById("put");
 const input = document.getElementById("width-input");
+const code = document.getElementById("border-width-prop")
+    code.innerText =  input.value;
 chnageable.style.borderWidth = `${input.value}px`;
 }
 
 function OnBorderRadiusInput() {
 const chnageable = document.getElementById("put");
 const input = document.getElementById("radius-input");
+const code = document.getElementById("border-radius-prop")
+    code.innerText =  input.value;
 chnageable.style.borderRadius = `${input.value}px`;
 }
 
 function OnFontFamillyChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("family-selection")
+    const code = document.getElementById("font-familly-prop")
+    code.innerText =  selection.value;
     editable.style.fontFamily = `${selection.value}`
 }
 
 function OnFontStyleChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("style-selection")
+    const code = document.getElementById("font-style-prop")
+    code.innerText =  selection.value;
     editable.style.fontStyle = `${selection.value}`
 }
 
 function OnFontWeidhtChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("weight-selection")
+    const code = document.getElementById("font-weight-prop")
+    code.innerText =  selection.value;
     editable.style.fontWeight = `${selection.value}`
 }
 
 function OnFontSizeChange() {
     const editable = document.getElementsByClassName("centered")[0]
     const selection = document.getElementById("font-size-selection")
+    const code = document.getElementById("font-size-prop")
+    code.innerText =  selection.value;
     editable.style.fontSize = `${selection.value}px`
 }
 
@@ -70,12 +84,12 @@ function OnColorPick() {
     const redNum = document.getElementById("red-value");
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
-    const colorDisplayer = document.getElementById("color-display");
-    colorDisplayer.innerText=`Color code: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("color-prop")
+    code.innerText =  `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`;
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#put{ background-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `#put{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {
@@ -87,35 +101,13 @@ function OnColorPick() {
     document.getElementsByTagName('head')[0].appendChild(style);
 }
 
-function decToHexa(n)
+function decToHexa(number)
 {
-    let hexaDeciNum = Array.from({length: 2}, (_, i) => 0);
-    let i = 0;
-    while (n != 0) {
-        let temp = 0;
-        temp = n % 16;
-        if (temp < 10) {
-            hexaDeciNum[i] = String.fromCharCode(temp + 48);
-            i++;
-        }
-        else {
-            hexaDeciNum[i] =  String.fromCharCode(temp + 55);
-            i++;
-        }
-        n = Math.floor(n / 16);
-    }
-    let hexCode = "";
-    if (i == 2) {
-        hexCode+=hexaDeciNum[0];
-        hexCode+=hexaDeciNum[1];
-    }
-    else if (i == 1) {
-        hexCode = "0";
-        hexCode+=hexaDeciNum[0];
-    }
-    else if (i == 0)
-    hexCode = "00";
-    return hexCode;
+  return Number(number).toString(16)
+}
+
+function pad(n) {
+    return (n < 10) ? ("0" + n) : n;
 }
 
 //code
@@ -126,12 +118,12 @@ function OnBorderFocusColorPick() {
     const redNum = document.getElementById("focus-red-border-value");
     const greenNum = document.getElementById("focus-green-border-value");
     const blueNum = document.getElementById("focus-blue-border-value");
-    const colorDisplayer = document.getElementById("focus-color-border-display");
-    colorDisplayer.innerText=`Border color code on focus: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("border-color-prop-focus")
+    code.innerText =  `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`;
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#put:focus{ border-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `#put:focus{ border-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {
@@ -152,12 +144,12 @@ function OnFocusColorPick() {
     const redNum = document.getElementById("focus-red-value");
     const greenNum = document.getElementById("focus-green-value");
     const blueNum = document.getElementById("focus-blue-value");
-    const colorDisplayer = document.getElementById("focus-color-display");
-    colorDisplayer.innerText=`Color code on focus: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}`
+    const code = document.getElementById("color-prop-focus")
+    code.innerText =  `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`;
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
-    var css = `#put:focus{ background-color: #${decToHexa(red.value)}${decToHexa(green.value)}${decToHexa(blue.value)}}`;
+    var css = `#put:focus{ background-color: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}}`;
     var style = document.createElement('style');
     
     if (style.styleSheet) {

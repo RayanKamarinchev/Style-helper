@@ -92,12 +92,12 @@ body{
 
 .code-show{
   position: relative;
-
     border: 5px dashed gray;
     height: 200px;
     margin-left: 50px;
     overflow:auto;
     white-space: nowrap;
+    width: 550px;
 }
 
 .content code{

@@ -58,6 +58,9 @@
                   <div class="image-box" style="margin-left: 0;">
                   </div>
                   <div class="code-show">
+                    <div class="push">
+                        <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                    </div>
                     <code>
                         <small class="class">.object</small>{<br>
                             <small class="prop">background-color</small>: <span id="background-prop">#808080</span><br>
@@ -91,45 +94,6 @@
             <p>background-image property слага снимка като фон, Като например:</p>
             <div id="background-image">
                <p style="color: #fbf5f3;">Това е текст</p> 
-            </div>
-            <div class="code-show">
-                <div class="push">
-                    <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
-                </div>
-                <code>
-                    .bg {<br>
-                        animation:slide 3s ease-in-out infinite alternate;<br>
-                        background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);<br>
-                        bottom:0;<br>
-                        left:-50%;<br>
-                        opacity:.5;<br>
-                        position:fixed;<br>
-                        right:-50%;<br>
-                        top:0;<br>
-                        z-index:-1;<br>
-                      }<br>
-                      <br>
-                      .bg2 {<br>
-                        animation-direction:alternate-reverse;<br>
-                        animation-duration:4s;<br>
-                      }<br>
-                      <br>
-                      .bg3 {<br>
-                        animation-duration:5s;<br>
-                      }<br>
-                      @keyframes slide {<br>
-                        0% {<br>
-                          transform:translateX(-25%);<br>
-                        }<br>
-                        100% {<br>
-                          transform:translateX(25%);<br>
-                        }<br>
-                      }<br>
-                      <br>
-                      .image-box{<br>
-                          background-color: rgb(128, 128, 128);<br>
-                      }<br>
-                </code>
             </div>
         </div>
     </div><br>

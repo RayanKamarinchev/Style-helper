@@ -53,7 +53,7 @@
                 </div>
                 <div class="code-show">
                     <div class="push">
-                        <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button><br><br>
+                        <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
                     </div>
                     <code>
                         <small class="class">#link-example:link</small>{ <br>
@@ -87,7 +87,6 @@
                 <div class="code-show">
                     <div class="push">
                         <button onclick="Copy2()" class="copy-btn"><i class="fas fa-copy"></i></button>
-                        <br><br>
                     </div>
                     <code>
                         <small class="class">#button-link:link</small>, <small class="class">#button-link:visited</small> {<br>
@@ -124,8 +123,8 @@
                     <div class="panel">
                         <div class="color-picker">
                             <p id="red-active-value">Red: 0</p><input onchange="OnActive()" type="range" id="active-red" name="red" min="0" max="255" value="0"> 
-                            <p id="green-active-value">Green: 0</p><input onchange="OnActive()" type="range" id="active-green" name="green" min="0" max="255" value="0"> 
-                            <p id="blue-active-value">Blue: 0</p><input onchange="OnActive()" type="range" id="active-blue" name="blue" min="0" max="255" value="0"> 
+                            <p id="green-active-value">Green: 148</p><input onchange="OnActive()" type="range" id="active-green" name="green" min="0" max="255" value="148"> 
+                            <p id="blue-active-value">Blue: 170</p><input onchange="OnActive()" type="range" id="active-blue" name="blue" min="0" max="255" value="170"> 
                         </div> 
                     </div>
                     <br>
@@ -164,10 +163,27 @@
                 <div class="image-box">
                     <div id="object" class="object"><p id="centered" class="centered">Click Me!</p></div>
                 </div>
+                <div class="code-show">
+                    <div class="push">
+                        <button onclick="Copy3()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                    </div>
+                    <code>
+                      <small class="class">.link</small>{<br>
+                        <small class="prop">color</small>: <span id="color-prop">#0094aa</span><br>
+                            <small class="prop">font-familly</small>: <span id="font-familly-prop">sans-serif</span><br>
+                            <small class="prop">font-style</small>: <span id="font-style-prop">normal</span><br>
+                            <small class="prop">font-weight</small>: <span id="font-weight-prop">normal</span><br>
+                            <small class="prop">font-size</small>: <span id="font-size-prop">20</span><br>
+                      } <br>
+                    <small class="class">.link:hover</small>{<br>
+                      <small class="prop">color</small>: <span id="color-hover-prop">#0094aa</span><br>
+                  } <br>
+                  <small class="class">.link:active</small>{<br>
+                    <small class="prop">color</small>: <span id="color-active-prop">#0094aa</span><br>
+                }
+                    </code>
+                  </div>
             </div>
-            <p id="color-hover-display">Color code on hover: #808080</p>
-            <p id="color-display">Color code: #808080</p>
-            <p id="color-active-display">Color code on active: #000000</p>
             <hr>
             <h2>Напреднал пример</h2>
             <p>

@@ -14,10 +14,8 @@
     const redNum = document.getElementById("red-value");
     const greenNum = document.getElementById("green-value");
     const blueNum = document.getElementById("blue-value");
-    const colorDisplayer = document.getElementById("color-display");
     const code = document.getElementById("color-prop");
     code.innerText = `#${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`;
-    colorDisplayer.innerText=`Color code: #${pad(decToHexa(red.value))}${pad(decToHexa(green.value))}${pad(decToHexa(blue.value))}`
     redNum.innerText = `Red: ${red.value}`
     greenNum.innerText = `Green: ${green.value}`
     blueNum.innerText = `Blue: ${blue.value}`
@@ -304,6 +302,10 @@ function Copy3() {
 }
 function Copy4() {
     const textCopy= document.getElementsByClassName("code-show")[3].innerText;
+    navigator.clipboard.writeText(textCopy);
+}
+function Copy5() {
+    const textCopy= document.getElementsByClassName("code-show")[4].innerText;
     navigator.clipboard.writeText(textCopy);
 }
 function dumpCSSText(element){

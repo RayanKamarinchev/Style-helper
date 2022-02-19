@@ -1,3 +1,9 @@
+const options = {
+    radial: "color1 {x%}, color2 {y%}...",
+    conic: "color1 {x%}, color2 {y%}...",
+    linear: "(direstion), color1 {x%}, color2 {y%}...",
+};
+
 function OnColorPick() {
     const red = document.getElementById("red-color");
     const green = document.getElementById("green-color");
@@ -48,5 +54,7 @@ function OnChange() {
     const chnageable = document.getElementsByClassName("image-box")[0];
     const selection = document.getElementById("selection");
     const values = document.getElementById("width-input");
+    const transformer = document.getElementsByClassName("transform-example")[0];
+    transformer.innerText = options[selection.value];
     chnageable.style.backgroundImage = `${selection.value}-gradient(${values.value})`
 }
