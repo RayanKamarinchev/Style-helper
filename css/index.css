@@ -237,3 +237,12 @@ svg {
     font-size:13px;
     opacity:0.6;
   }
+
+  .navbar p {
+    align-items: center;
+    display: flex;
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+  }

@@ -122,38 +122,38 @@
                     <button onclick="Copy2()" class="copy-btn"><i class="fas fa-copy"></i></button>
                 </div>
                 <code>
- .gradient-border {<br>
-	 --border-width: 3px;<br>
-	 position: relative;<br>
-	 display: flex;<br>
-	 justify-content: center;<br>
-	 align-items: center;<br>
-	 width: 300px;<br>
-	 height: 200px;<br>
-	 font-family: Lato, sans-serif;<br>
-	 font-size: 2.5rem;<br>
-	 text-transform: uppercase;<br>
-	 color: white;<br>
-	 background: #222;<br>
-	 border-radius: var(--border-width);<br>
-}<br><br>
- .gradient-border::after {<br>
-	 position: absolute;<br>
-	 content: "";<br>
-	 top: calc(-1 * var(--border-width));<br>
-	 left: calc(-1 * var(--border-width));<br>
-	 z-index: -1;<br>
-	 width: calc(100% + var(--border-width) * 2);<br>
-	 height: calc(100% + var(--border-width) * 2);<br>
-	 background: linear-gradient(60deg,<br> #5f86f2,<br> #a65ff2,<br> #f25fd0,<br> #f25f61,<br> #f2cb5f,<br> #abf25f,<br> #5ff281,<br> #5ff2f0);<br>
-	 background-size: 300% 300%;<br>
-	 background-position: 0 50%;<br>
-	 border-radius: calc(2 * var(--border-width));<br>
-	 animation: moveGradient 4s alternate infinite;<br>
-}<br><br>
- @keyframes moveGradient {<br>
+                    <small class="class">.gradient-border</small> {<br>
+                        <small class="prop">--border-width</small>: 3px;<br>
+                        <small class="prop">position</small>: relative;<br>
+                        <small class="prop">display</small>: flex;<br>
+                        <small class="prop">justify-content</small>: center;<br>
+                        <small class="prop">align-items</small>: center;<br>
+                        <small class="prop">width</small>: 300px;<br>
+                        <small class="prop">height</small>: 200px;<br>
+                        <small class="prop">font-family</small>: Lato, sans-serif;<br>
+                        <small class="prop">font-size</small>: 2.5rem;<br>
+                        <small class="prop">text-transform</small>: uppercase;<br>
+                        <small class="prop">color</small>: white;<br>
+                        <small class="prop">background</small>: #222;<br>
+                        <small class="prop">border-radius</small>: var(--border-width);<br>
+                    }<br><br>
+                    <small class="class">.gradient-border::after</small> {<br>
+                        <small class="prop">position</small>: absolute;<br>
+                        <small class="prop">content</small>: "";<br>
+                        <small class="prop">top</small>: calc(-1 * var(--border-width));<br>
+                        <small class="prop">left</small>: calc(-1 * var(--border-width));<br>
+                        <small class="prop">z-index</small>: -1;<br>
+                        <small class="prop">width</small>: calc(100% + var(--border-width) * 2);<br>
+                        <small class="prop">height</small>: calc(100% + var(--border-width) * 2);<br>
+                        <small class="prop">background</small>: linear-gradient(60deg,<br> #5f86f2,<br> #a65ff2,<br> #f25fd0,<br> #f25f61,<br> #f2cb5f,<br> #abf25f,<br> #5ff281,<br> #5ff2f0);<br>
+                        <small class="prop">background-size</small>: 300% 300%;<br>
+                        <small class="prop">background-position</small>: 0 50%;<br>
+                        <small class="prop">border-radius</small>: calc(2 * var(--border-width));<br>
+                        <small class="prop">animation</small>: moveGradient 4s alternate infinite;<br>
+                    }<br><br>
+                    <small class="class">@keyframes moveGradient</small> {<br>
 	 50% {<br>
-		 background-position: 100% 50%;<br>
+        <small class="prop">background-position</small>: 100% 50%;<br>
 	}<br>
 }<br>
                 </code>

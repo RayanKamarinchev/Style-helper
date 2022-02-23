@@ -20,11 +20,12 @@
 <body>
     <div class="layout">
         <div class="navbar">
-            <a href="../index.html" id="the_logo"><img height="50px" src="../pics/logo.png" alt=""><p style="padding-left: 15px; padding-right: 15px">Помощник за стилове</p></a> 
-            <a class="active" href="#"><p><i class="fab fa-css3-alt"></i> CSS</p></a> 
+            <p class="navbar_p" id="the_logo"><img height="50px" src="../pics/logo.png" alt=""><p style="padding-left: 15px; padding-right: 15px">Помощник за стилове</p></p>
+            <a href="../index.html"><p><i class="fas fa-home"></i> Начало</p></a>
+            <a class="active" href="html/animations.html"><p><i class="fab fa-css3-alt"></i> CSS</p></a> 
             <a href="../html part/html/home.html"><p><i class="fab fa-html5"></i> HTML</p></a> 
             <a href="../js part/html/jshome.html"><p><i class="fab fa-js-square"></i> JavaScript</p></a> 
-            <a href="../contact.html"><p><i class="fas fa-id-card"></i> Contact</p></a>
+            <a href="../contact.html"><p><i class="fas fa-id-card"></i> Контакти</p></a>
           </div>
         <div class="sidebar">
             <a style="background-color: #0094AA;" href="animations.html" class="sidebar-link"><i class="fas fa-angle-double-right"></i> Animations</a>
@@ -180,122 +181,122 @@
                     <button onclick="Copy3()" class="copy-btn"><i class="fas fa-copy"></i></button>
                 </div>
                 <code>
-                    .system { <br>
-                        background-color: #251C2D;<br>
-                        position: relative;<br>
-                        width: 100%;<br>
-                        max-width: 700px;<br>
-                        padding-top: 100%;<br>
+                    <small class="class">.system</small> { <br>
+                        <small class="prop">background-color</small>: #251C2D;<br>
+                        <small class="prop">position</small>: relative;<br>
+                        <small class="prop">width</small>: 100%;<br>
+                        <small class="prop">max-width</small>: 700px;<br>
+                        <small class="prop">padding-top</small>: 100%;<br>
                     }<br><br>
-                    @media (min-width: 700px) {<br>
-                        .system {<br>
-                            padding-top: 700px;<br>
+                    <small class="class">@media (min-width: 700px)</small> {<br>
+                        <small class="class">.system</small> {<br>
+                            <small class="prop">padding-top</small>: 700px;<br>
                        }<br>
                     }<br><br>
-                    .system__sun {<br>
-                        position: absolute;<br>
-                        top: 50%;<br>
-                        left: 50%;<br>
-                        transform: translate(-50%, -50%);<br>
+                    <small class="class">.system__sun</small> {<br>
+                        <small class="prop">position</small>: absolute;<br>
+                        <small class="prop">top</small>: 50%;<br>
+                        <small class="prop">left</small>: 50%;<br>
+                        <small class="prop">transform</small>: translate(-50%, -50%);<br>
                     }<br><br>
-                    .system__orbit {<br>
-                        position: absolute;<br>
-                        top: 50%;<br>
-                        left: 50%;<br>
-                        border: 1px solid rgba(255, 255, 255, .3);<br>
-                        border-radius: 100%;<br>
-                        transform: translate(-50%, -50%);<br>
-                        animation: spin infinite linear both;<br>
+                    <small class="class">.system__orbit</small> {<br>
+                        <small class="prop">position</small>: absolute;<br>
+                        <small class="prop">top</small>: 50%;<br>
+                        <small class="prop">left</small>: 50%;<br>
+                        <small class="prop">border</small>: 1px solid rgba(255, 255, 255, .3);<br>
+                        <small class="prop">border-radius</small>: 100%;<br>
+                        <small class="prop">transform</small>: translate(-50%, -50%);<br>
+                        <small class="prop">animation</small>: spin infinite linear both;<br>
                     }<br><br>
-                    .system__orbit:nth-child(1) {<br>
-                        width: calc(10%);<br>
-                        height: calc(10%);<br>
+                    <small class="class">.system__orbit:nth-child(1)</small> {<br>
+                        <small class="prop">width</small>: calc(10%);<br>
+                        <small class="prop">height</small>: calc(10%);<br>
                     }<br>
-                    .system__orbit:nth-child(2) {<br>
-                        width: calc(20%);<br>
-                        height: calc(20%);<br>
+                    <small class="class">.system__orbit:nth-child(2)</small> {<br>
+                        <small class="prop">width</small>: calc(20%);<br>
+                        <small class="prop">height</small>: calc(20%);<br>
                     }<br>
-                    .system__orbit:nth-child(3) {<br>
-                        width: calc(30%);<br>
-                        height: calc(30%);<br>
+                    <small class="class">.system__orbit:nth-child(3)</small> {<br>
+                        <small class="prop">width</small>: calc(30%);<br>
+                        <small class="prop">height</small>: calc(30%);<br>
                     }<br>
-                    .system__orbit:nth-child(4) {<br>
-                        width: calc(40%);<br>
-                        height: calc(40%);<br>
+                    <small class="class">.system__orbit:nth-child(4)</small> {<br>
+                        <small class="prop">width</small>: calc(40%);<br>
+                        <small class="prop">height</small>: calc(40%);<br>
                     }<br>
-                    .system__orbit:nth-child(5) {<br>
-                        width: calc(50%);<br>
-                        height: calc(50%);<br>
+                    <small class="class">.system__orbit:nth-child(5)</small> {<br>
+                        <small class="prop">width</small>: calc(50%);<br>
+                        <small class="prop">height</small>: calc(50%);<br>
                     }<br>
-                    .system__orbit:nth-child(6) {<br>
-                        width: calc(60%);<br>
-                        height: calc(60%);<br>
+                    <small class="class">.system__orbit:nth-child(6)</small> {<br>
+                        <small class="prop">width</small>: calc(60%);<br>
+                        <small class="prop">height</small>: calc(60%);<br>
                     }<br>
-                    .system__orbit:nth-child(7) {<br>
-                        width: calc(70%);<br>
-                        height: calc(70%);<br>
+                    <small class="class">.system__orbit:nth-child(7)</small> {<br>
+                        <small class="prop">width</small>: calc(70%);<br>
+                        <small class="prop">height</small>: calc(70%);<br>
                     }<br>
-                    .system__orbit:nth-child(8) {<br>
-                        width: calc(80%);<br>
-                        height: calc(80%);<br>
+                    <small class="class">.system__orbit:nth-child(8)</small> {<br>
+                        <small class="prop">width</small>: calc(80%);<br>
+                        <small class="prop">height</small>: calc(80%);<br>
                     }<br>
-                    .system__orbit:nth-child(9) {<br>
-                        width: calc(90%);<br>
-                        height: calc(90%);<br>
+                    <small class="class">.system__orbit:nth-child(9)</small> {<br>
+                        <small class="prop">width</small>: calc(90%);<br>
+                        <small class="prop">height</small>: calc(90%);<br>
                     }<br>
-                    .system__orbit:nth-child(10) {<br>
-                        width: calc(100%);<br>
-                        height: calc(100%);<br>
+                    <small class="class">.system__orbit:nth-child(10)</small> {<br>
+                        <small class="prop"></small>width: calc(100%);<br>
+                        <small class="prop">height</small>: calc(100%);<br>
                     }<br><br>
-                    .system__orbit--sun {<br>
-                        border: none;<br>
+                    <small class="class">.system__orbit--sun</small> {<br>
+                        <small class="prop">border</small>: none;<br>
                     }<br>
-                    .system__orbit--mercury {<br>
-                        animation-duration: 1s;<br>
+                    <small class="class">.system__orbit--mercury</small> {<br>
+                        <small class="prop">animation-duration</small>: 1s;<br>
                     }<br>
-                    .system__orbit--venus {<br>
-                        animation-duration: 2.6s;<br>
+                    <small class="class">.system__orbit--venus</small> {<br>
+                        <small class="prop">animation-duration</small>: 2.6s;<br>
                     }<br>
-                    .system__orbit--earth {<br>
-                        animation-duration: 4.1s;<br>
+                    <small class="class">.system__orbit--earth</small> {<br>
+                        <small class="prop">animation-duration</small>: 4.1s;<br>
                     }<br>
-                    .system__orbit--mars {<br>
-                        animation-duration: 7.8s;<br>
+                    <small class="class">.system__orbit--mars</small> {<br>
+                        <small class="prop">animation-duration</small>: 7.8s;<br>
                     }<br>
-                    .system__orbit--jupiter {<br>
-                        animation-duration: 49.8s;<br>
+                    <small class="class">.system__orbit--jupiter</small> {<br>
+                        <small class="prop">animation-duration</small>: 49.8s;<br>
                     }<br>
-                    .system__orbit--saturn {<br>
-                        animation-duration: 120.3s;<br>
+                    <small class="class">.system__orbit--saturn</small> {<br>
+                        <small class="prop">animation-duration</small>: 120.3s;<br>
                     }<br>
-                    .system__orbit--uranus {<br>
-                        animation-duration: 348.4s;<br>
+                    <small class="class">.system__orbit--uranus</small> {<br>
+                        <small class="prop">animation-duration</small>: 348.4s;<br>
                     }<br>
-                    .system__orbit--neptune {<br>
-                        animation-duration: 684.4s;<br>
+                    <small class="class">.system__orbit--neptune</small> {<br>
+                        <small class="prop">animation-duration</small>: 684.4s;<br>
                     }<br>
-                    .system__orbit--pluto {<br>
-                        animation-duration: 1028.6s;<br>
+                    <small class="class">.system__orbit--pluto</small> {<br>
+                        <small class="prop">animation-duration</small>: 1028.6s;<br>
                     }<br><br>
-                    .system__planet {<br>
-                        position: absolute;<br>
-                        top: 50%;<br>
-                        left: -12px;<br>
-                        width: 25px;<br>
-                        height: 25px;<br>
-                        border-radius: 100%;<br>
-                        transform: translateY(-50%);<br>
+                    <small class="class">.system__planet</small> {<br>
+                        <small class="prop">position</small>: absolute;<br>
+                        <small class="prop">top</small>: 50%;<br>
+                        <small class="prop">left</small>: -12px;<br>
+                        <small class="prop">width</small>: 25px;<br>
+                        <small class="prop">height</small>: 25px;<br>
+                        <small class="prop">border-radius</small>: 100%;<br>
+                        <small class="prop"></small>transform: translateY(-50%);<br>
                     }<br><br>
-                    .system__icon {<br>
-                        width: 100%;<br>
-                        height: 100%;<br>
+                    <small class="class">.system__icon</small> {<br>
+                        <small class="prop">width</small>: 100%;<br>
+                        <small class="prop">height</small>: 100%;<br>
                     }<br><br>
-                    @keyframes spin {<br>
+                    <small class="class">@keyframes spin</small> {<br>
                         from {<br>
-                            transform: translate(-50%, -50%);<br>
+                            <small class="prop">transform</small>: translate(-50%, -50%);<br>
                        }<br>
                         to {<br>
-                            transform: translate(-50%, -50%) rotate(-360deg);<br>
+                            <small class="prop">transform</small>: translate(-50%, -50%) rotate(-360deg);<br>
                        }<br>
                     }<br>
                 </code>
