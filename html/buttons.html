@@ -73,7 +73,7 @@
                 <button class="btn" id="green-hover">Green</button>
                 <button class="btn" id="blue-hover">Blue</button>
                 <button class="btn" id="opacity-button">Opacity change</button>
-                <div class="code-show">
+                <div class="code-show" style="width: 300px;">
                     <div class="push">
                         <button onclick="Copy2()" class="copy-btn"><i class="fas fa-copy"></i></button>
                         <br>
@@ -199,35 +199,35 @@
                     <div class="image-box">
                     <div id="object" class="object"><p class="centered">Click Me!</p></div>
                     </div>
-                    <div class="code-show" style="width: 350px;">
-                        <div class="push">
-                            <button onclick="Copy4()" class="copy-btn"><i class="fas fa-copy"></i></button>
-                        </div>
-                        <code>
-                            <small class="class">.object:hover</small>{<br>
-                                <small class="prop">bckground-color</small>: <span id="hover-color-prop">#0094aa</span><br>
-                                <small class="prop">opacity</small>: <span id="hover-opacity-prop">1</span><br>
-                            }
-                            <small class="class">.object:active</small>{<br>
-                                <small class="prop">opacity</small>: <span id="focus-opacity-prop">1</span><br>
-                            }
-                            <small class="class">.object</small>{<br>
-                                <small class="prop">border-style</small>: <span id="border-style-prop">solid</span><br>
-                                <small class="prop">border-width</small>: <span id="border-width-prop">0</span><br>
-                                <small class="prop">border-radius</small>: <span id="border-radius-prop">0</span><br>
-                                <small class="prop">border-color</small>: <span id="border-color-prop">#808080</span><br>
-                                <small class="prop">background-color</small>: <span id="color-prop">#0094aa</span><br>
-                            }
-                            <small class="class">.text</small>{<br>
-                                <small class="prop">font-familly</small>: <span id="font-familly-prop">sans-serif</span><br>
-                                <small class="prop">font-style</small>: <span id="font-style-prop">normal</span><br>
-                                <small class="prop">font-weight</small>: <span id="font-weight-prop">normal</span><br>
-                                <small class="prop">font-size</small>: <span id="font-size-prop">20</span><br>
-                            }
-                        </code>
+                    
+                </div><br><br>
+                <div class="code-show" style="width: 350px;">
+                    <div class="push">
+                        <button onclick="Copy4()" class="copy-btn"><i class="fas fa-copy"></i></button>
                     </div>
-                
-            </div>
+                    <code>
+                        <small class="class">.object:hover</small>{<br>
+                            <small class="prop">bckground-color</small>: <span id="hover-color-prop">#0094aa</span><br>
+                            <small class="prop">opacity</small>: <span id="hover-opacity-prop">1</span><br>
+                        }
+                        <small class="class">.object:active</small>{<br>
+                            <small class="prop">opacity</small>: <span id="focus-opacity-prop">1</span><br>
+                        }
+                        <small class="class">.object</small>{<br>
+                            <small class="prop">border-style</small>: <span id="border-style-prop">solid</span><br>
+                            <small class="prop">border-width</small>: <span id="border-width-prop">0</span><br>
+                            <small class="prop">border-radius</small>: <span id="border-radius-prop">0</span><br>
+                            <small class="prop">border-color</small>: <span id="border-color-prop">#808080</span><br>
+                            <small class="prop">background-color</small>: <span id="color-prop">#0094aa</span><br>
+                        }
+                        <small class="class">.text</small>{<br>
+                            <small class="prop">font-familly</small>: <span id="font-familly-prop">sans-serif</span><br>
+                            <small class="prop">font-style</small>: <span id="font-style-prop">normal</span><br>
+                            <small class="prop">font-weight</small>: <span id="font-weight-prop">normal</span><br>
+                            <small class="prop">font-size</small>: <span id="font-size-prop">20</span><br>
+                        }
+                    </code>
+                </div>
             <hr>
             <h2>Напреднал пример</h2>
             <br><br><br>
@@ -265,7 +265,7 @@
 	<small class="prop">transform</small>: skewX(45deg);<br>
 	<small class="prop">background-color</small>: #196090;<br>
 }<br><br>
-<small class="class"></small>.button::after {<br>
+<small class="class">.button::after</small> {<br>
     <small class="prop">right</small>: -15px;<br>
     <small class="prop">height</small>: 100%;<br>
     <small class="prop">width</small>: 15px;<br>
@@ -273,11 +273,11 @@
     <small class="prop">transform</small>: skewY(45deg);<br>
     <small class="prop">background-color</small>: #124364;<br>
 }<br><br>
-<small class="class"></small>.button:active {<br>
+<small class="class">.button:active</small> {<br>
     <small class="prop">margin-left</small>: 10px;<br>
     <small class="prop">margin-top</small>: 10px;<br>
 }<br><br>
-<small class="class"></small>.button:active::before {<br>
+<small class="class">.button:active::before</small> {<br>
     <small class="prop">bottom</small>: -5px;<br>
     <small class="prop">height</small>: 5px;<br>
     <small class="prop">left</small>: 3px;<br>

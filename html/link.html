@@ -162,33 +162,62 @@
                 <div class="image-box">
                     <div id="object" class="object"><p id="centered" class="centered">Click Me!</p></div>
                 </div>
-                <div class="code-show">
-                    <div class="push">
-                        <button onclick="Copy3()" class="copy-btn"><i class="fas fa-copy"></i></button>
-                    </div>
-                    <code>
-                      <small class="class">.link</small>{<br>
-                        <small class="prop">color</small>: <span id="color-prop">#0094aa</span><br>
-                            <small class="prop">font-familly</small>: <span id="font-familly-prop">sans-serif</span><br>
-                            <small class="prop">font-style</small>: <span id="font-style-prop">normal</span><br>
-                            <small class="prop">font-weight</small>: <span id="font-weight-prop">normal</span><br>
-                            <small class="prop">font-size</small>: <span id="font-size-prop">20</span><br>
-                      } <br>
-                    <small class="class">.link:hover</small>{<br>
-                      <small class="prop">color</small>: <span id="color-hover-prop">#0094aa</span><br>
+            </div><br><br>
+            <div class="code-show">
+                <div class="push">
+                    <button onclick="Copy3()" class="copy-btn"><i class="fas fa-copy"></i></button>
+                </div>
+                <code>
+                  <small class="class">.link</small>{<br>
+                    <small class="prop">color</small>: <span id="color-prop">#0094aa</span><br>
+                        <small class="prop">font-familly</small>: <span id="font-familly-prop">sans-serif</span><br>
+                        <small class="prop">font-style</small>: <span id="font-style-prop">normal</span><br>
+                        <small class="prop">font-weight</small>: <span id="font-weight-prop">normal</span><br>
+                        <small class="prop">font-size</small>: <span id="font-size-prop">20</span><br>
                   } <br>
-                  <small class="class">.link:active</small>{<br>
-                    <small class="prop">color</small>: <span id="color-active-prop">#0094aa</span><br>
-                }
-                    </code>
-                  </div>
-            </div>
+                <small class="class">.link:hover</small>{<br>
+                  <small class="prop">color</small>: <span id="color-hover-prop">#0094aa</span><br>
+              } <br>
+              <small class="class">.link:active</small>{<br>
+                <small class="prop">color</small>: <span id="color-active-prop">#0094aa</span><br>
+            }
+                </code>
+              </div>
             <hr>
             <h2>Напреднал пример</h2>
             <p>
                 Повече информация за проекта на <a href="index.html" class="underline">Началната страница</a>
-              </p>
-              <br><br><br>
+              </p><br>
+              <div class="code-show">
+                <code>
+                    <small class="class">a</small>{<br>
+                        <small class="prop">text-decoration</small>: none;<br>
+                        <small class="prop">color</small>: #0074D9;<br>
+                      }<br>
+                      <small class="class">.underline</small>{<br>
+                        <small class="prop">position</small>: relative;<br>
+                      }<br>
+                      <br>
+                      <small class="class">.underline::before</small>{<br>
+                        <small class="prop">content</small>: '';<br>
+                        <small class="prop">position</small>: absolute;<br>
+                        <small class="prop">bottom</small>: 0;<br>
+                        <small class="prop">right</small>: 0;<br>
+                        <small class="prop">width</small>: 0;<br>
+                        <small class="prop">height</small>: 2px;<br>
+                        <small class="prop">background-color</small>: #0074D9;<br>
+                        <small class="prop">transition</small>: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);<br>
+                      }<br>
+                      <br>
+                      <small class="class">@media (hover: hover) and (pointer: fine)</small> {<br>
+                        <small class="class">.underline:hover::before</small>{<br>
+                            <small class="prop">left</small>: 0;<br>
+                            <small class="prop">right</small>: auto;<br>
+                            <small class="prop">width</small>: 100%;<br>
+                        }
+                      }
+                </code>
+              </div>
             </div>
         </div><br>
         <div class="footer-clean">

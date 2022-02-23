@@ -58,49 +58,48 @@
             </div>
             <hr>
             <h2>Border changer</h2>
-            <div class="border-chnager">
-                <label for="selection"><small class="class">border-style</small>: </label>
-                <select onchange="OnBorderSelect()" class="custom-select" id="selection">
-                    <option value="solid">solid</option>
-                    <option value="dashed">dashed</option>
-                    <option value="dotted">dotted</option>
-                    <option value="double">double</option>
-                    <option value="ridge">ridge</option>
-                    <option value="groove">groove</option>
-                    <option value="outset">outset</option>
-                    <option value="inset">inset</option>
-                </select> <br><br>
-                <label for="input"><small class="class">border-width</small>: </label>
-                <input onchange="OnBorderWidthInput()" type="number" class="custom-input" id="width-input"> <br><br>
-                <label for="input"><small class="class">border-radius</small>: </label>
-                <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
-                <div class="color-picker">
-                    <p id="red-border-value">Red: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-red" name="red" min="0" max="255"> 
-                     <p id="green-border-value">Green: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-green" name="green" min="0" max="255">
-                    <p id="blue-border-value">Blue: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255"> 
-                </div>
-            </div>
             <div class="example">
-                <div class="image-box" style="margin-left: 0px;">
+                <div class="border-chnager">
+                    <label for="selection"><small class="class">border-style</small>: </label>
+                    <select onchange="OnBorderSelect()" class="custom-select" id="selection">
+                        <option value="solid">solid</option>
+                        <option value="dashed">dashed</option>
+                        <option value="dotted">dotted</option>
+                        <option value="double">double</option>
+                        <option value="ridge">ridge</option>
+                        <option value="groove">groove</option>
+                        <option value="outset">outset</option>
+                        <option value="inset">inset</option>
+                    </select> <br><br>
+                    <label for="input"><small class="class">border-width</small>: </label>
+                    <input onchange="OnBorderWidthInput()" type="number" class="custom-input" id="width-input"> <br><br>
+                    <label for="input"><small class="class">border-radius</small>: </label>
+                    <input onchange="OnBorderRadiusInput()" type="number" class="custom-input" id="radius-input"> <br><br>
+                    <div class="color-picker">
+                        <p id="red-border-value">Red: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-red" name="red" min="0" max="255"> 
+                         <p id="green-border-value">Green: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-green" name="green" min="0" max="255">
+                        <p id="blue-border-value">Blue: 128</p><input onchange="OnBorderColorPick()" type="range" id="border-blue" name="blue" min="0" max="255"> 
+                    </div>
+                </div>
+                <div class="image-box">
                     <div id="object" class="object">
                         
                     </div>
                 </div>
-                <div class="code-show">
-                    <div class="push">
-                        <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
-                    </div>
-                    <code>
-                        <small class="class">.object</small>{<br>
-                            <small class="prop">border-style</small>: <span id="border-style-prop">solid</span><br>
-                            <small class="prop">border-width</small>: <span id="border-width-prop">0</span><br>
-                            <small class="prop">border-radius</small>: <span id="border-radius-prop">0</span><br>
-                            <small class="prop">border-color</small>: <span id="border-color-prop">#808080</span><br>
-                        }
-                    </code>
+            </div><br><br>
+            <div class="code-show">
+                <div class="push">
+                    <button onclick="Copy1()" class="copy-btn"><i class="fas fa-copy"></i></button>
                 </div>
+                <code>
+                    <small class="class">.object</small>{<br>
+                        <small class="prop">border-style</small>: <span id="border-style-prop">solid</span><br>
+                        <small class="prop">border-width</small>: <span id="border-width-prop">0</span><br>
+                        <small class="prop">border-radius</small>: <span id="border-radius-prop">0</span><br>
+                        <small class="prop">border-color</small>: <span id="border-color-prop">#808080</span><br>
+                    }
+                </code>
             </div>
-            <hr>
             <div class="info">
                 <p><small class="out">border-width</small> - задава размер на границата</p>
                 <p><small class="out">border-color</small> - задава цвят</p>
